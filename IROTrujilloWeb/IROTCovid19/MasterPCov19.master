@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPCov19.master.cs" Inherits="IROTCovid19_MasterPCov19" %>
+
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>  
+  <title>MINSA Gestión Seguimiento Covid-19</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../Estilos/all.min.45673c8b88c4.css">
+  <link rel="stylesheet" href="../../Estilos/fonts.min.d1672d50eef3.css">
+  <link rel="stylesheet" href="../../Estilos/sb-admin-2.min.ff492edd4e6b.css">
+  <link rel="stylesheet" href="../../Estilos/styles.min.8d7e80de1c02.css">
+  <link rel="stylesheet" href="../../Estilos/main.min.7028456c81f0.css">
+  <link rel="stylesheet" href="../../Estilos/jquery-ui.min.ea576e58351c.css">
+  <link rel="icon" type="image/png" href="https://siscovid.minsa.gob.pe/static/images/favicon.c669f3b11278.ico">
+  
+
+</head>
+  <body id="page-top">
+    <div id="wrapper">
+      
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion  toggled" id="accordionSidebar">
+  <a class="sidebar-brand d-flex align-items-center justify-content-center bg-danger" href="https://siscovid.minsa.gob.pe/ficha/buscar/">
+    <img src="../../Imagenes/logo-minsa.232c6fd9754e.jpeg" class="sidebar-logo" />
+    <img src="../../Imagenes/Minsa-ico.a3f2c62899c0.png" class="sidebar-logo-reduce">
+  </a>
+
+  <hr class="sidebar-divider my-0">
+
+  <li class="nav-item">
+        
+	  <a class="nav-link collapsed" routerlink="/bandeja" aria-expanded="false" href="../../IROJVAR/RegCovid/">
+		<!--<i class="fas fa-eye"></i>-->
+		<span>Registro Covid-PR</span>
+	  </a>    
+      <a class="nav-link collapsed" routerlink="/bandeja" aria-expanded="false" href="../../IROJVAR/RepCovid/">
+        <!--<i class="fas fa-user"></i>-->
+        <span>Ver Pruebas</span>
+      </a>
+
+      <a class="nav-link collapsed" aria-expanded="false" href="../../Login">
+        <!--<i class="fas fa-file"></i>-->
+        <span>Cerrar Sesion</span>
+      </a>
+    
+  </li>
+
+  <hr class="sidebar-divider d-none d-md-block">
+
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+  </div>
+</ul>
+
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          
+<nav class="navbar navbar-expand navbar-light bg-danger topbar mb-4 static-top shadow">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+               
+            </asp:ContentPlaceHolder>
+  
+  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+    <i class="fa fa-bars"></i>
+  </button>
+  <ul class="navbar-nav ml-auto">
+    
+    
+      <h6 style="color: white; margin-top: 25px; font-size: 0.7em;"><%--Usted esta en: 00005197 - IRO--%>
+		  <select class="form-control form-control-lg" onchange="valMenu(this.value)">
+			  <option selected="selected">Menu</option>
+			  <option value="Registro">Registro</option>
+			  <option value="Reporte">Reporte</option>
+			  <option value="Salir">Salir</option>
+		  </select>
+      </h6>
+<script>
+	function valMenu(optVal) {
+		switch (optVal) {
+			case "Registro":
+				window.location = "../../IROJVAR/RegCovid/";
+				break;
+			case "Reporte":
+				window.location = "../../IROJVAR/RepCovid/";
+				break;
+			default:
+				break;
+		}
+	}
+</script>
+    <div class="topbar-divider d-none d-sm-block"></div>
+    <li class="nav-item dropdown no-arrow">
+      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="mr-2 d-none d-lg-inline text-white small">
+          
+            Lilet
+          
+        </span>
+        <img class="img-profile rounded-circle" src="../../Imagenes/indice.3997e61c6981.png">
+      </a>
+      <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+        <a class="dropdown-item" routerlink="">
+          <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Configuraciones
+        </a>
+        <div class="dropdown-divider"></div>
+        <a href="https://siscovid.minsa.gob.pe/accounts/password/" class="dropdown-item">
+          <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Cambiar contraseña
+        </a>
+        <div class="dropdown-divider"></div>
+        <a href="https://siscovid.minsa.gob.pe/accounts/logout/" class="dropdown-item" routerlink="">
+          <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Salir
+        </a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+          <div class="container-fluid">
+            <div class="container-fichas">
+              <div class="row box-row">
+                <div class="col-12">
+                  
+                </div>
+                
+<div class="container-fluid">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+               
+            </asp:ContentPlaceHolder>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Minsa </span>
+            </div>
+          </div>
+        </footer>
+		
+        <div id="spinner" style="display: none;" class="hidden-print">
+          <div class="spinner">
+              <img id="img-spinner" src="./MINSA Gestión Seguimiento Covid-192_files/ajax-loader.e7041eb06a62.gif" alt="Loading" style="width: 70%; height: 70%;">
+          </div>
+          <input type="hidden" value="0" id="spinId">
+        </div>
+      </div>
+    </div>
+	
+
+    
+
+  
+
+
+</body></html>

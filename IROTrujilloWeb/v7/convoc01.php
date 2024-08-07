@@ -1,0 +1,2355 @@
+<?php
+session_start();
+?>
+<!DOCTYPE HTML>
+<!--[if gt IE 8]> <html class="ie9" lang="en"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from imedica.sharkslab.com/HTML/departments.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2017 19:19:19 GMT -->
+
+<head>
+    <!-- **EVITAR ALIJAMIENTO EN CACHE** -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>IRO-Trujillo v7</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+    <!-- <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" /> -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/blue.css" id="style-switch" /> -->
+    <link rel="stylesheet" type="text/css" href="css/blue.css" />
+
+    <!-- Style de migraciones para resoluciones directorales -->
+    <link rel="stylesheet" id="shortcodes-css" href="css/shortcoderd.css?ver=4.0.15" type="text/css" media="all">
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+    <!--[if IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+    <link rel="stylesheet" type="text/css" href="css/inline.min.css" />
+
+    <!-- Para la ventana modal de resultados -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/modalsly.css" /> -->
+
+    <!-- Para la ventana modal nueva de portal -->
+    <!-- <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://nastechperu.com/v4/vendor/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="http://nastechperu.com/v4/css/skins/default.css" />
+    <-- Theme CSS ->
+    <link rel="stylesheet" href="http://nastechperu.com/v4/css/theme.css">
+    <link rel="stylesheet" href="http://nastechperu.com/v4/css/theme-elements.css">
+    <link rel="stylesheet" href="http://nastechperu.com/v4/css/theme-blog.css">
+    <link rel="stylesheet" href="http://nastechperu.com/v4/css/theme-shop.css">
+    <-- Theme Custom CSS ->
+    <link rel="stylesheet" href="http://nastechperu.com/v4/css/custom.css">
+    <-- Head Libs ->
+    <script src="http://nastechperu.com/v4/vendor/modernizr/modernizr.min.js"></script>
+ -->
+
+    <!-- Para la ventana modal con Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div id="search-overlay">
+            <div class="container">
+                <div id="close">X</div>
+
+                <input id="hidden-search" type="text" placeholder="Start Typing..." autofocus="autofocus" autocomplete="off" />
+                <!--hidden input the user types into-->
+                <input id="display-search" type="text" placeholder="Start Typing..." autofocus="autofocus" autocomplete="off" />
+                <!--mirrored input that shows the actual input value-->
+            </div>
+        </div>
+
+        <!--Topbar-->
+        <div class="topbar-info no-pad">
+            <div class="container">
+                <div class="social-wrap-head col-md-2 no-pad">
+                    <ul>
+                        <li><a href="https://www.facebook.com/iro.trujillo" target="_blank"><i class="icon-facebook head-social-icon" id="face-head" data-original-title="" title=""></i></a></li>
+                        <!-- <li><a href="#"><i class="icon-social-twitter head-social-icon" id="tweet-head" data-original-title="" title=""></i></a></li>
+                        <li><a href="#"><i class="icon-google-plus head-social-icon" id="gplus-head" data-original-title="" title=""></i></a></li> -->
+                        <li><a href="https://www.youtube.com/channel/UCaXOqWlvrLlN3Sx0cIn2_uw" target="_blank"><i class="oicon-youtube head-social-icon" id="youtb-head" data-original-title="" title=""></i></a></li>
+                        <!-- <li><a href="#"><i class="icon-linkedin head-social-icon" id="link-head" data-original-title="" title=""></i></a></li> -->
+                        <li><a href="#"><i class="icon-rss head-social-icon" id="rss-head" data-original-title="" title=""></i></a></li>
+                        <li><a href="https://www.office.com/login?es=Click&ru=%2F&msafed=0" target="_blank"><i class="icon-envelope head-social-icon" id="mail-head" data-original-title="" title=""></i></a></li>
+                        <li><a href="efact.html" target="_blank"><i class="icon-cart head-social-icon" id="listul-head" data-original-title="" title=""></i></a></li>
+                    </ul>
+                </div>
+                <div class="top-info-contact pull-right col-md-6">¡Llámenos hoy! +51 44287236 &nbsp;&nbsp;&nbsp;&nbsp;+51 44287222 | informes@irotrujillo.gob.pe
+                    <div id="search" class="fa fa-search search-head"></div>
+                </div>
+            </div>
+        </div>
+        <!--Topbar-info-close-->
+
+        <div id="headerstic">
+            <div class=" top-bar container">
+                <div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle icon-list-ul" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                </button>
+                                <button type="button" class="navbar-toggle icon-rocket" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                    <span class="sr-only">Toggle navigation</span>
+                                </button>
+                                <a href="index.html">
+                                    <div class="logo"></div>
+                                </a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="inactive"><a href="index.html">Inicio</a>
+                                        <!-- <li class="active"><a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-home"></i>Home</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="home-page-1.html">Home Page 1</a></li>
+                                            <li><a href="home-page-2.html">Home Page 2</a></li>                                           
+                                        </ul> -->
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="nosotros.html" class="dropdown-toggle"><i class="icon-cog"></i>Conocenos</a>
+                                        <!-- <a href="nosotros.html" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i>Conocenos<b class="icon-angle-down"></b></a> -->
+                                        <!-- <ul class="dropdown-menu">
+                                            <li class="dropdown"><a href="#">Page Elements</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="page-elements-1.html">Page Elements 1</a></li>
+                                                    <li><a href="page-elements-2.html">Page Elements 2</a></li>
+                                                    <li><a href="page-elements-3.html">Page Elements 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="typography.html">Typography</a></li>
+                                            <li><a href="columns.html">Columns</a></li>
+                                            <li><a href="pricing-tables.html">Pricing Tables</a></li>                                            
+                                        </ul> -->
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i>Servicios<b class="icon-angle-down"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <!-- <li class="dropdown"><a href="#">About Us</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="about-us-1.html">About Us 1</a></li>
+                                                    <li><a href="about-us-2.html">About Us 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="#">Services</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="services-1.html">Services 1</a></li>
+                                                    <li><a href="services-2.html">Services 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="departments.html">Departments</a></li>
+                                            <li class="dropdown"><a href="#">Meet Our Doctors</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="meet-our-doctors-1.html">Meet Our Doctors 1</a></li>
+                                                    <li><a href="meet-our-doctors-2.html">Meet Our Doctors 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="testimonials.html">Testimonials</a></li> -->
+                                            <li><a href="estadistic.html">Estad&iacute;stica</a></li>
+                                            <!-- <li><a href="concurso.html">Convocatorias</a></li> -->
+                                            <li><a href="convoc.php">Convocatorias</a></li>
+                                            <li><a href="..\facturae/" target="_blank">Facturación Electrónica</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- <li class="dropdown">
+                                    <a href="uide.html" class="dropdown-toggle"><i class="icon-camera"></i>Área Académica<b class="icon-angle-down"></b></a> -->
+                                    <!-- <a href="uide.html" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-camera"></i>Área Académica<b class="icon-angle-down"></b></a> -->
+                                    <!-- <ul class="dropdown-menu">
+                                            <li class="dropdown left-dropdown"><a href="#">Gallery Carousel</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="gallery-1-column-carousel.html">1 Column Carousel</a></li>
+                                                    <li><a href="gallery-2-columns-carousel.html">2 Columns Carousel</a></li>
+                                                    <li><a href="gallery-3-columns-carousel.html">3 Columns Carousel</a></li>
+                                                    <li><a href="gallery-4-columns-carousel.html">4 Columns Carousel</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown left-dropdown"><a href="#">Gallery Full Width</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="gallery-1-column.html">Gallery 1 Column</a></li>
+                                                    <li><a href="gallery-2-columns.html">Gallery 2 Columns</a></li>
+                                                    <li><a href="gallery-3-columns.html">Gallery 3 Columns</a></li>
+                                                    <li><a href="gallery-4-columns.html">Gallery 4 Columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown left-dropdown"><a href="#">Gallery Left Sidebar</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="gallery-1-column-left-sidebar.html">Gallery 1 Column</a></li>
+                                                    <li><a href="gallery-2-columns-left-sidebar.html">Gallery 2 Columns</a></li>
+                                                    <li><a href="gallery-3-columns-left-sidebar.html">Gallery 3 Columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown left-dropdown"><a href="#">Gallery Right Sidebar</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="gallery-1-column-right-sidebar.html">Gallery 1 Column</a></li>
+                                                    <li><a href="gallery-2-columns-right-sidebar.html">Gallery 2 Columns</a></li>
+                                                    <li><a href="gallery-3-columns-right-sidebar.html">Gallery 3 Columns</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul> -->
+                                    <!-- </li> -->
+
+                                    <li class="dropdown">
+                                        <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=14261&amp;id_tema=1" target="_blank"><i class="icon-envelope"></i>Transparencia<b class="icon-angle-down"></b></a>
+                                    </li>
+                                        <!-- <a href="http://www.peru.gob.pe/transparencia/pep_transparencia_lista_planes_frame.asp?id_entidad=14261&id_tema=1" target="_blank"><i class="icon-pencil"></i>Transparencia<b class="icon-angle-down"></b></a> -->
+                                        <!-- <a href="http://www.peru.gob.pe/transparencia/pep_transparencia_lista_planes_frame.asp?id_entidad=14261&id_tema=1" target="_blank" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-pencil"></i>Transparencia<b class="icon-angle-down"></b></a> -->
+
+                                        <!-- <ul class="dropdown-menu">
+                                            <li><a href="transp.html">Local</a></li>
+                                            <li><a href="http://www.peru.gob.pe/transparencia/pep_transparencia_lista_planes_frame.asp?id_entidad=14261&id_tema=1" target="_blank"><i class="icon-pencil"></i>Estandar<b class="icon-angle-down"></b></a></li> -->
+
+                                            <!-- <li class="dropdown left-dropdown"><a href="#">Blog Masonry</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="blog-masonry-full-width.html">Full Width</a></li>
+                                                    <li><a href="blog-masonry-left-sidebar.html">Left Sidebar</a></li>
+                                                    <li><a href="blog-masonry-right-sidebar.html">Right Sidebar</a></li> 
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li class="dropdown left-dropdown"><a href="#">Blog Medium Image</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="blog-medium-full-width.html">Full Width</a></li>
+                                                    <li><a href="blog-medium-left-sidebar.html">Left Sidebar</a></li>
+                                                    <li><a href="blog-medium-right-sidebar.html">Right Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown left-dropdown"><a href="#">Blog Large Image</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                                </ul>
+                                            </li>                   
+                                            <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+                                            <li class="dropdown left-dropdown"><a href="#">Blog Single Post</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="blog-image-post.html">Image Post</a></li>
+                                                    <li><a href="blog-gallery-post.html">Gallery Post</a></li>
+                                                    <li><a href="blog-video-post.html">Video Post</a></li>
+                                                    <li><a href="blog-full-width-post.html">Full Width Post</a></li>
+                                                </ul>
+                                            </li> -->
+                                        <!-- </ul>
+                                    </li> -->
+
+                                    <li class="dropdown"><a href="contact.html"><i class="icon-envelope"></i>Contactanos<b class="icon-angle-down"></b></a>
+                                        <!-- <ul class="dropdown-menu">
+                                            <li><a href="contact-1.html">Contact Version 1</a></li>
+                                            <li><a href="contact-2.html">Contact Version 2</a></li>
+                                            <li><a href="contact-3.html">Contact Version 3</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li class="dropdown"><a href="https://iroperu-my.sharepoint.com/:f:/g/personal/tic_irotrujillo_gob_pe/EqSwHUVJp7tIpSTmVRF9gHIBFsMCDzs7qOogTtAen7Tv9Q?e=v840T1" target="_blank"><i class="icon-envelope"></i>Comité Ética<b class="icon-angle-down"></b></a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+
+                            <div class="hide-mid collapse navbar-collapse option-drop" id="bs-example-navbar-collapse-2">
+
+                                <ul class="nav navbar-nav navbar-right other-op">
+                                    <li><i class="icon-phone2"></i>+51 44287236&nbsp;&nbsp;&nbsp;&nbsp;+51 44287222</li>
+                                    <li><i class="icon-mail"></i><a href="#" class="mail-menu">informes@irotrujillo.gob.pe</a></li>
+
+                                    <li><i class="icon-globe"></i>
+                                        <a href="https://www.facebook.com/iro.trujillo" target="_blank" class="mail-menu"><i class="icon-facebook"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCaXOqWlvrLlN3Sx0cIn2_uw" target="_blank" class="mail-menu"><i class="oicon-youtube"></i></a>
+                                        <a href="http://irotrujillo.gob.pe:2095" target="_blank" class="mail-menu"><i class="icon-envelope"></i></a>
+                                        <a href="#" class="mail-menu"><i class="icon-rss"></i></a>
+                                    </li>
+                                    <li><i class="icon-search"></i>
+                                        <div class="search-wrap">
+                                            <input type="text" id="search-text" class="search-txt" name="search-text">
+                                            <button id="searchbt" name="searchbt" class="icon-search search-bt"></button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+
+                            <!-- <div class="hide-mid collapse navbar-collapse cart-drop" id="bs-example-navbar-collapse-3">
+                                <ul class="nav navbar-nav navbar-left">
+                                    <li><a href="#"><i class="icon-cart"></i>0 item(s) - $0.00</a></li>
+                                    <li><a href="#"><i class="icon-user"></i>My Account</a></li>
+                                </ul>
+                            </div> -->
+                            <!-- /.navbar-collapse -->
+
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+            <!--Topbar End-->
+        </div>
+    </header>
+
+    <section class="complete-content content-footer-space">
+
+        <!--Mid Content Start-->
+
+        <div class="about-intro-wrap pull-left">
+
+            <div class="bread-crumb-wrap ibc-wrap-6">
+                <div class="container">
+                    <!--Title / Beadcrumb-->
+                    <div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
+                        <div class="bread-heading">
+                            <h1>Convocatorias</h1></div>
+                        <div class="bread-crumb pull-right">
+                            <ul>
+                                <li><a href="index-2.html">Home</a></li>
+                                <li><a href="about-us-1.html">Convocatorias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 dept-tabs-wrap wow fadeInUp animated" data-wow-delay="1s" data-wow-offset="200">
+
+                        <!-- tabs left -->
+                        <div class="tabbable tabs-left">
+                            <ul class="nav nav-tabs col-md-4 col-sm-4 col-xs-5">
+                                <li class="active"><a href="#a" data-toggle="tab"><i class="icon-eye-open dept-tabs-icon"></i><span class="tabs-heads">Convocatorias</span><i class="right-arr"></i></a></li> <!-- CAP728 -->
+                                <li><a href="#b" data-toggle="tab"><i class="icon-eye-open dept-tabs-icon"></i><span class="tabs-heads">Convoc. CAP D. Leg. 276&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)</span><i class="right-arr"></i></a></li>
+                                <li><a href="#c" data-toggle="tab"><i class="icon-eye-open dept-tabs-icon"></i><span class="tabs-heads">Convoc. CAS D. Leg. 1057&nbsp;&nbsp;&nbsp;&nbsp;(1) </span><i class="right-arr"></i></a></li>
+                                <li><a href="#d" data-toggle="tab"><i class="icon-eye-open dept-tabs-icon"></i><span class="tabs-heads">Locación de Servicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10)</span><i class="right-arr"></i></a></li>
+                                <!--
+                                  <li><a href="#b" data-toggle="tab"><i class="icon-heart dept-tabs-icon"></i><span class="tabs-heads">Datos Generales</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#c" data-toggle="tab"><i class="icon-food dept-tabs-icon"></i><span class="tabs-heads">Planeamiento y Organización</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#d" data-toggle="tab"><i class="icon-ambulance dept-tabs-icon"></i><span class="tabs-heads">Información Presupuestal</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#e" data-toggle="tab"><i class="icon-hospital dept-tabs-icon"></i><span class="tabs-heads">Comité de Ética en Investigación</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#f" data-toggle="tab"><i class="icon-medkit dept-tabs-icon"></i><span class="tabs-heads">Información de Personal</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#g" data-toggle="tab"><i class="icon-hospital dept-tabs-icon"></i><span class="tabs-heads">Información de Contrataciones</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#h" data-toggle="tab"><i class="icon-eye-open dept-tabs-icon"></i><span class="tabs-heads">Actividades Oficiales</span><i class="right-arr"></i></a></li>
+                                  <li><a href="#i" data-toggle="tab"><i class="icon-stethoscope dept-tabs-icon"></i><span class="tabs-heads">Información Adicional</span><i class="right-arr"></i></a></li>
+                                -->
+                            </ul>
+
+                            <div class="tab-content col-md-8 col-sm-8 col-xs-7 pull-right">
+
+                                <div class="fade tab-pane active in" id="a">
+                                    <div class="dept-title-tabs">Bienvenidos</div>
+                                    <img alt="" class="img-responsive" src="../images/IROdesf2k14_transp.jpg" />
+                                    <div class="dept-subtitle-tabs">Presentación</div>
+                                    <p>¡Bienvenida/o! ¡A nombre de la Unidad de Recursos Humanos del Instituto IRO-JSU, agradecemos su interés por formar parte de nuestra institución!</p>
+
+                                    <p>Buscamos siempre renovar nuestra energía, por ello, queremos ampliar nuestro equipo de trabajo con personas con una sólida formación profesional y social, dispuestos a contribuir con nosotros a mejorar nuestro país; impulsando nuestros servicios y haciendo crecer nuestra institución.</p>
+
+                                    <p>Te invitamos a formar parte de nuestro equipo, se parte de nuestra institución.</p>
+
+                                    <!-- <div class="dept-subtitle-tabs">Recuerde que la información proporcionada en las Convocatorias del IRO-JSU posee carácter de declaración jurada, por lo que usted es responsable de su veracidad y se sujeta a las acciones legales o penales que se deriven de su defecto.</div> -->
+                                    <!--
+                                     <p>Toda persona tiene derecho a solicitar y recibir información de cualquier entidad de la administración pública. Para ello, usted tiene dos opciones:</p>
+
+                                     <p>1. Abra el archivo de solicitud de acceso a la información (<a href="../down/pdf/forminfopub_iro.pdf" class="pdf" target="_blank">formato PDF</a>). Imprima la solicitud, llénela con sus datos y preséntela en la Mesa de Partes del Instituto Regional de Oftalmología (Mz P' Lote 7-A  Sector Natasha Alta, Covicorti, Trujillo, la Libertad). No olvide guardar una copia del cargo.</p>
+
+                                     <p>2. Descargue el archivo comprimido de solicitud de acceso a la información (<a href="../down/ziprar/forminfopub_iro2018.rar" class="zip">formato RAR</a>). Abra el archivo forminfopub_iro.pdf, llénelo con sus datos y preséntela con copia para su cargo en la Mesa de Partes del Instituto Regional de Oftalmología. </p>
+                                     -->
+
+                                    <!-- <p>2. Descargue el archivo comprimido de solicitud de acceso a la información (<a href="../down/ziprar/forminfopub_iro2018.rar" class="zip">formato RAR</a>). Abra el archivo forminfopub_iro.pdf, llénelo con sus datos y remítalo por correo electrónico a <script type='text/javascript'>
+                                     <!-
+                                     var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                     var path = 'hr' + 'ef' + '=';
+                                     var addy7999 = '&#105;nf&#111;' + '&#114;m&#101;s' + '&#64;';
+                                     addy7999 = addy7999 + 'i&#114;ot&#114;u' + 'j&#105;l&#108;o' + '&#46;' + '&#103;' + '&#111;' + '&#98;' + '&#46;' + '&#112;' + '&#101;';
+                                     document.write('<a ' + path + '\'' + prefix + ':' + addy7999 + '\'>');
+                                     document.write(addy7999);
+                                     document.write('<\/a>');
+                                     //-> \n </script><script type='text/javascript'>
+                                     <!-
+                                     document.write('<span style=\'display: none;\'>');
+                                     //->
+                                     </script>Esta dirección de correo electrónico está siendo protegida contra los robots de spam. Necesita tener JavaScript habilitado para poder verlo.
+                                     <script type='text/javascript'>
+                                     <!-
+                                     document.write('</');
+                                     document.write('span>');
+                                     //->
+                                     </script> y guarde una copia del email enviado.</p> -->
+
+                                </div>
+
+                                <div class="tab-pane fade" id="b">
+                                    <div class="dept-title-tabs">Convocatoria CAP</div>
+                                    <img alt="" class="img-responsive" src="../images/Cap_concurso.png" />
+                                    <br />
+                                    <p>El régimen laboral de la actividad privada, regido por el Decreto Legislativo N° 276, es un contrato individual de trabajo que puede celebrase libremente por tiempo indeterminado o sujeto a modalidad.</p>
+                                    <p>Descargar FORMATO_N°_01-FORM_CURRICULUM_VITAE  <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/FORMATO_N°_01-FORM_CURRICULUM_VITAE.xlsx" target="_blank">DESCARGAR</a></p>
+                                    <!--
+                                    <div class="dept-subtitle-tabs">Seguimiento a la Ejecución Presupuestal</div>
+                                        <ul>
+                                            <div style="text-indent: 20px;"> 
+                                            <li><i class="fa fa-th about-list-arrows"></i> <a href="https://drive.google.com/open?id=0B9RDrYsLv9KHZUZ5a3hEbXdBbDQ" TARGET="_new" title="Reporte Dinámico Presupuesto">Reporte Dinámico de seguimiento a la ejecución presupuestal </a></li>
+                                            </div>
+                                        </ul>
+                                     -->
+                                    <div class="dept-subtitle-tabs">CAP</div>
+                                    <ul>
+                                        <!--
+                                        <div style="text-indent: 20px;"> 
+                                        <li><i class="fa fa-th about-list-arrows"></i> <a href="#" title="View all posts"> Ejecución Presupuestal de Gastos </a></li>
+                                        </div>
+                                        -->
+                                        <div align="center">
+
+
+
+
+
+
+
+                                          <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Descargas Disponibles</h3>
+        </div>
+        <div class="panel-body">
+
+          <?php
+            //**EVITAR el uso de CACHE en PHP**
+            header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+            header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
+            //**EVITAR el uso de CACHE en PHP**
+
+            // Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada. 
+            $link = new PDO('mysql:host=irotrujillo.gob.pe;dbname=trujillo_frmloadp', 'trujillo_supp', 'Axes0.Nod0'); // el campo vaciío es para la password. 
+          ?>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th width="5%">#</th>
+                <th width="10%">PROCESO</th>
+                <th width="50%">DESCRIPCIÓN</th>
+                <th width="15%">FECHA INI.</th>
+                <th width="15%">EST.</th>
+                <th width="5%">Descarga</th>        
+                <!-- <th width="10%">Eliminar</th> -->
+              </tr>
+              
+            </thead>
+
+            <tbody>           
+              <p>  
+              </p>                    
+
+              <?php foreach ($link->query('SELECT * from convp WHERE proceso LIKE "CAP%" order by id DESC') as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+              <tr>
+                <td><?php echo $row['id'] // aca te faltaba poner los echo para que se muestre el valor de la variable.  ?></td>
+                  <td><?php echo $row['proceso'] ?></td>
+                  <td><?php echo $row['descp'] ?></td>
+                  <!-- <td><php echo $row['fechp'] ?></td> -->
+                  <td><?php $fecha = new DateTime($row['fechp']);
+                $fecha = $fecha->format("d-m-Y");
+                echo $fecha ?></td>                
+                <td><?php if($row['estp']=='1'){echo 'Activo';}else{echo 'Finalizado';} ?></td>
+                <td><a title="Descargar Archivo" href="<?php echo $row['urlbp']; ?>" download="<?php echo $row['urlbp']; ?>" style="color: blue; font-size:18px;"> <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> </a></td>
+                <!--
+                  <td><php echo $row['urlbp'] ?></td>
+                -->
+                  <td bgcolor="#E9E9E9">
+                      <div align="center"><strong><span class="Estilo104"><button data-target="#openModal4b<?php echo $row['id']?>" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal4b<?php echo $row['id']?>" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                      <div id="openModal4b<?php echo $row['id']?>" class="modalDialog">
+                          <div centralize>
+                              <a href="#close" title="Close" class="close">X</a>
+                              <h2>Resultados <?php echo $row['proceso'] ?></h2>
+                              <!-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> -->
+                              <!-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> -->
+                              <table width="320" height="240" border="0" align="center">
+                                  <thead>
+                                      <tr>
+                                        <td bgcolor="#FFFFB7">
+                                            <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                        </td>
+                                        <td bgcolor="#FFFFB7">
+                                            <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                        </td>
+                                        <td bgcolor="#FFFFB7">
+                                            <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                        </td>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <?php if($row['fecfe']<>''){?>
+                                        <tr>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104">FE DE ERRATAS</span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecfe'] ?></span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center">
+                                                  <a href="<?php echo $row['urlfe'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                      <?php } ?>
+                                      <?php if($row['fecr1']<>''){?>
+                                        <tr>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104">Relac. Aptos</span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr1'] ?></span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center">
+                                                  <a href="<?php echo $row['urlr1'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                      <?php } ?>
+                                      <?php if($row['fecr2']<>''){?>
+                                        <tr>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104">Res. Eval_Tec.</span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr2'] ?></span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center">
+                                                  <a href="<?php echo $row['urlr2'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                      <?php } ?>
+                                      <?php if($row['fecr3']<>''){?>
+                                        <tr>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104">Res. Eval_CV.</span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr3'] ?></span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center">
+                                                  <a href="<?php echo $row['urlr3'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                      <?php } ?>
+                                      <?php if($row['fecr4']<>''){?>
+                                        <tr>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104">Res. Entr_Pers.</span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr4'] ?></span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center">
+                                                  <a href="<?php echo $row['urlr4'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                      <?php } ?>
+                                      <?php if($row['fecr5']<>''){?>
+                                      <tr>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104">Res. Final</span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr5'] ?></span></strong></div>
+                                          </td>
+                                          <td bgcolor="#E9E9E9">
+                                              <div align="center">
+                                                  <a href="<?php echo $row['urlr5'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                      <?php } ?>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </td>
+      
+              </tr>
+              <?php
+                }
+                //mysql_close($link);
+              ?>
+
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+                                            
+
+                                        </div>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane fade" id="c">
+                                    <div class="dept-title-tabs">Convocatoria CAS</div>
+                                    <img alt="" class="img-responsive" src="../images/btn_cas.png" />
+                                    <br />
+                                    <p>El Régimen Especial de Contratación Administrativa de Servicios, regulado mediante el Decreto Legislativo 1057, es un contrato individual de trabajo que puede celebrase libremente por tiempo indeterminado o sujeto a modalidad.</p>
+                                    <p>Descargar FORMATO_N°_01-FORM_CURRICULUM_VITAE  <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/FORMATO_N°_01-FORM_CURRICULUM_VITAE.xlsx" target="_blank">DESCARGAR</a></p>
+                                    <!--
+                                    <div class="dept-subtitle-tabs">Seguimiento a la Ejecución Presupuestal</div>
+                                        <ul>
+                                            <div style="text-indent: 20px;"> 
+                                            <li><i class="fa fa-th about-list-arrows"></i> <a href="https://drive.google.com/open?id=0B9RDrYsLv9KHZUZ5a3hEbXdBbDQ" TARGET="_new" title="Reporte Dinámico Presupuesto">Reporte Dinámico de seguimiento a la ejecución presupuestal </a></li>
+                                            </div>
+                                        </ul>
+                                     -->
+                                    <!-- <div class="dept-subtitle-tabs">CAP</div>-->
+
+                                    <ul>
+                                        <!--
+                                        <div style="text-indent: 20px;"> 
+                                        <li><i class="fa fa-th about-list-arrows"></i> <a href="#" title="View all posts"> Ejecución Presupuestal de Gastos </a></li>
+                                        </div>
+                                        -->
+                                        <div align="center">
+
+
+
+                                            <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title" style="font-family:Courier; color:White;">Resultados Disponibles</h3>
+        </div>
+        <div class="panel-body">
+
+          	<?php
+	            // Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada. 
+	            $link = new PDO('mysql:host=irotrujillo.gob.pe;dbname=trujillo_frmloadp', 'trujillo_supp', 'Axes0.Nod0'); // el campo vaciío es para la password. 
+          	?>
+
+          	<table class="table">
+	            <thead>
+	              <tr>
+	                <th width="5%">#</th>
+	                <th width="10%">PROCESO</th>
+	                <th width="50%">DESCRIPCIÓN</th>
+	                <th width="15%">FECHA INI.</th>
+	                <th width="12%">EST.</th>
+	                <th width="3%">Bases</th>
+	                <th width="5%">Resultados</th>
+	                <!-- <th width="10%">Eliminar</th> -->
+	              </tr>
+	              
+	            </thead>
+
+	            <tbody>           
+	              	<p>  
+	              	</p>                    
+
+	              	<?php foreach ($link->query('SELECT * from convp WHERE proceso LIKE "CAS%" order by id DESC') as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+	              	<tr>
+	                	<td><?php echo $row['id'] // aca te faltaba poner los echo para que se muestre el valor de la variable.  ?></td>
+	                  	<td><?php echo $row['proceso'] ?></td>
+	                  	<td><?php echo $row['descp'] ?></td>
+	                  	<!-- <td><php echo $row['fechp'] ?></td> -->
+	                 	<td><?php $fecha = new DateTime($row['fechp']);
+	                		$fecha = $fecha->format("d-m-Y");
+	                		echo $fecha ?></td>                
+	                	<td><?php if($row['estp']=='1'){echo 'Activo';}else{echo 'Finalizado';} ?></td>
+	                	<td><a title="Descargar Bases" href="<?php echo $row['urlbp']; ?>" download="<?php echo $row['urlbp']; ?>" style="color: blue; font-size:18px;"> <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> </a></td>
+		                <!--
+		                  <td><php echo $row['urlbp'] ?></td>
+		                -->
+		                <td> <!-- bgcolor="#E9E9E9" -->
+		                	<div align="center"><strong><span class="Estilo104"><button data-target="#openModal4b<?php echo $row['id']?>" data-toggle="modal" class="btn btn-primary btn-lg"><a title="Ver Resultados" href="#openModal4b<?php echo $row['id']?>" style="color:#FF0000;">Ver</a></button></span></strong></div>
+		                    <div id="openModal4b<?php echo $row['id']?>" class="modalDialog">
+		                          <div centralize>
+		                              <a href="#close" title="Close" class="close">X</a>
+		                              <h2>Resultados <?php echo $row['proceso'] ?></h2>
+		                              <!-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> -->
+		                              <!-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> -->
+		                              <table width="320" height="240" border="0" align="center">
+		                                  <thead>
+		                                      <tr>
+		                                        <td bgcolor="#FFFFB7">
+		                                            <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+		                                        </td>
+		                                        <td bgcolor="#FFFFB7">
+		                                            <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+		                                        </td>
+		                                        <td bgcolor="#FFFFB7">
+		                                            <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+		                                        </td>
+		                                      </tr>
+		                                  </thead>
+		                                  <tbody>
+		                                      <?php if($row['fecfe']<>''){?>
+		                                        <tr>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104">FE DE ERRATAS</span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecfe'] ?></span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center">
+		                                                  <a href="<?php echo $row['urlfe'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+		                                              </div>
+		                                          </td>
+		                                        </tr>
+		                                      <?php } ?>
+		                                      <?php if($row['fecr1']<>''){?>
+		                                        <tr>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104">Relac. Aptos</span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr1'] ?></span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center">
+		                                                  <a href="<?php echo $row['urlr1'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+		                                              </div>
+		                                          </td>
+		                                        </tr>
+		                                      <?php } ?>
+		                                      <?php if($row['fecr2']<>''){?>
+		                                        <tr>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104">Res. Eval_Tec.</span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr2'] ?></span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center">
+		                                                  <a href="<?php echo $row['urlr2'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+		                                              </div>
+		                                          </td>
+		                                        </tr>
+		                                      <?php } ?>
+		                                      <?php if($row['fecr3']<>''){?>
+		                                        <tr>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104">Res. Eval_CV.</span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr3'] ?></span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center">
+		                                                  <a href="<?php echo $row['urlr3'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+		                                              </div>
+		                                          </td>
+		                                        </tr>
+		                                      <?php } ?>
+		                                      <?php if($row['fecr4']<>''){?>
+		                                        <tr>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104">Res. Entr_Pers.</span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr4'] ?></span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center">
+		                                                  <a href="<?php echo $row['urlr4'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+		                                              </div>
+		                                          </td>
+		                                        </tr>
+		                                      <?php } ?>
+		                                      <?php if($row['fecr5']<>''){?>
+		                                      <tr>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104">Res. Final</span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center"><strong><span class="Estilo104"><?php echo $row['fecr5'] ?></span></strong></div>
+		                                          </td>
+		                                          <td bgcolor="#E9E9E9">
+		                                              <div align="center">
+		                                                  <a href="<?php echo $row['urlr5'] ?>" target="_blank"><img src="../../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a>
+		                                              </div>
+		                                          </td>
+		                                      </tr>
+		                                      <?php } ?>
+		                                  </tbody>
+		                              </table>
+		                          </div>
+		                    </div>
+		                </td>
+	      
+	              	</tr>
+		            <?php
+		                }
+		                //mysql_close($link);
+		            ?>
+
+
+	            </tbody>
+          	</table>
+
+        </div>
+      </div>
+
+                                            
+                                        </div>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane fade" id="d">
+                                    <div class="dept-title-tabs">Bienvenidos</div>
+                                    <img alt="" class="img-responsive" src="../images/LocacionServicios1.jpg" />
+                                    <div class="dept-subtitle-tabs">Presentación</div>
+                                    <p>¡Bienvenida/o! ¡A nombre de la Unidad de Logística del Instituto IRO-JSU, agradecemos su interés por formar parte de nuestra institución!</p>
+
+                                    <p>Buscamos siempre renovar nuestra energía, por ello, queremos ampliar nuestro equipo de trabajo con personas con una sólida formación profesional y social, dispuestos a contribuir con nosotros a mejorar nuestro país; impulsando nuestros servicios y haciendo crecer nuestra institución.</p>
+
+                                    <p>Las personas que cumplan con los términos de referencia especificados en el requerimiento, deberán enviar la documentación de acuerdo a las indicaciones brindadas en el cronograma de los Procesos de Selección, publicados por la Unidad de Logística</p>
+                                    <p>* Para cualquier información o consulta adicional pueden escribir al correo <a href="mailto:cotizaciones_iro@yahoo.com">cotizaciones_iro@yahoo.com</a></p>
+
+                                    <!-- <div class="dept-subtitle-tabs">Se amplia el plazo hasta el 11 de Noviembre para las Convocatorias: LOC-PS-380-010-2019, LOC-PS-383-011-2019, LOC-PS-382-013-2019.</div> -->
+
+                                    <div class="dept-subtitle-tabs">INDICACIONES PARA POSTULANTES:</div>
+                                    <p>* Las postulaciones que se reciban en otro formato no serán admitidas.</p>
+                                    <p>* El postulante podrá presentarse a un solo requerimiento. De presentarse a más de un requerimiento, solo se considerará la primera postulación.</p>
+                                    <p>* Los resultados del proceso de selección sólo se publican vía web.</p>
+                                    <p>* Los formatos debidamente llenados deberán ser entregados a la Unidad de Logística.</p>
+
+
+                                    <p>Descargar FORMATO de Autorización de pago a cuenta CCI >>  <a href="http://www.irotrujillo.gob.pe/files/LS2019/Formato_Auriza_Pago_CCI.docx" target="_blank" class="dept-subtitle-tabs"> DESCARGAR</a></p>
+                                    <p>Descargar FORMATO de Declaración Jurada Vinculo Laboral >>  <a href="http://www.irotrujillo.gob.pe/files/LS2019/DECLARACION_JURADA_VinculoLaboral.docx" target="_blank" class="dept-subtitle-tabs"> DESCARGAR</a></p>
+                                    <!-- <p>Descargar FORMATO DE SOLICITUD DPTO ENFERMERIA LOC-405-406-407 >>  <a href="http://www.irotrujillo.gob.pe/files/LS2019/Formato_solicitud.doc" target="_blank">DESCARGAR</a></p>
+                                    <p>Descargar TERMINOS DE REFERENCIA DPTO ENFERMERIA LOC-405-406-407 >>  <a href="http://www.irotrujillo.gob.pe/files/LS2019/TERMINOS_REFRENCIA_SERVICIO_ESPECIALIZADO_ENFERMERIA_PROFESIONAL.docx" target="_blank">DESCARGAR</a></p> -->
+
+                                    <ul>
+                                        <!--
+                                        <div style="text-indent: 20px;"> 
+                                        <li><i class="fa fa-th about-list-arrows"></i> <a href="#" title="View all posts"> Ejecución Presupuestal de Gastos </a></li>
+                                        </div>
+                                        -->
+                                        <div align="center">
+
+                                            <table width="630" height="320" border="0" align="center" >
+                                                <tbody>
+                                                    <tr style="border-bottom-color:#FF0000; border-bottom-style:solid; border-bottom-width:1px; border-top-color:#FF0000; border-top-style:solid; border-top-width:1px;">
+                                                        <!-- <p style=" border-bottom-color:#FF0000; border-bottom-style:dashed; border-bottom-width:2px; border-top-color:#000099; border-top-style:solid; border-top-width:1px;"> Un ejemplo de estilos de bordes </p> -->
+                                                        <td width="9" height="30" bgcolor="#FFFFB7">
+                                                            <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Proceso</span></strong></div>
+                                                        </td>
+                                                        <td width="64" bgcolor="#FFFFB7">
+                                                            <div align="center"><strong><span class="Estilo104"> Descripción</span></strong></div>
+                                                        </td>
+                                                        <td width="10" bgcolor="#FFFFB7">
+                                                            <div align="center"><strong><span class="Estilo104"> Bases</span></strong></div>
+                                                        </td>
+                                                        <td width="10" bgcolor="#FFFFB7">
+                                                            <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                        </td>
+                                                        <td width="9" bgcolor="#FFFFB7">
+                                                            <div align="center"><strong><span class="Estilo104"> Estado</span></strong></div>
+                                                        </td>
+                                                        <td width="9" height="30" bgcolor="#FFFFB7">
+                                                            <div align="center"><strong><span class="Estilo104"> Resultado</span></strong></div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS428-018-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO ASISTENTE ADMINISTRATIVO - UNIDAD DE LOGISTICA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS417-016-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">29-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS410-017-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO TOMA DE ENCUESTAS - OFIC. GESTION DE CALIDAD</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS410-17-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">28-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS417-016-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO ATENCION MEDICA ESPECIALIZADA EN REUMATOLOGIA - DPTO DE UVEA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS417-016-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">25-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS406-015-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO ESPECIALIZADO DE ENFERMERIA PROFESIONAL - DPTO EN ENEFERMERIA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS406-015-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">06-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS405-014-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO ESPECIALIZADO DE ENFERMERIA PROFESIONAL - DPTO EN ENEFERMERIA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS405-014-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">06-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr> 
+
+                  	                                <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS407-013-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO DE TECNICA EN ENFERMERIA PARA ATENCION EN CONSULTA EXTERNA - DPTO EN ENEFERMERIA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS407-013-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">05-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr> 
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS403-012-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO DE TECNICA EN ENFERMERIA PARA ATENCION EN CONSULTA EXTERNA - DPTO DE ENFERMERIA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS403-012-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">05-11-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS382-013-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO  DE CONSULTA OFTALMOLOGICA INTEGRAL-  DPTO  DE GLAUCOMA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS382-013-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">24-10-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">LOC-PS385-012-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO DE CONSULTA OFTALMOLOGICA INTEGRAL - DPTO DE O. G. Y REFRACCIÓN</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS385-012-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">24-10-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS383-011-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO ESPECIALIZADO EN ESTADÍSTICA - DPTO DE INVESTIGACIÓN</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS383-011-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">24-10-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS380-010-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERVICIO DE ASISTENTE  ADMINISTRATIVO - UNIDAD DE LOGÍSTICA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS380-010-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">24-10-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS343-009-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">ASESORIAS Y CONSULTORIAS EN OTRAS ESPECIALIDADES /OFICINA DE ADMINISTRACION</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS343-009-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">10-09-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal11d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal11d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal11d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS333-008-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERV. DE CODIFICACION Y REGISTRO DE FORMATOS DE PACIENTE CON REFERENCIA Y CONTRAREFERENCIA / UNIDAD DE SEGUROS</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS333-008-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">10-09-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal10d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal10d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal10d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS334-007-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERV. ESPECIALIZADO EN ATENCIONES A PACIENTES / UNIDAD DE SEGUROS</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS334-007-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">10-09-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal9d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal9d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal9d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS325-006-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">SERV. DE EVALUACION DE CASOS DE REFERENCIA Y CONTRAREFERENCIA / UNIDAD DE SEGUROS</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS325-006-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">10-09-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal8d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal8d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal8d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS322-005-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio de Médico Auditor / Unidad de Seguro</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS322-005-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">20-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal7d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal7d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal7d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS324-004-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio de Elaboración de Protocolo de Médico / Dpto. de Docencia</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS324-004-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">20-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal6d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal6d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal6d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS289-003-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio de Enfermería  Especializada en Área Recuperación  Post Anestesia / Dpto. Enfermería</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS289-003-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">16-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal5d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal5d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal5d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS284-002-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio especializado de Enfermería Profesional / Dpto. Enfermería</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS284-002-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">16-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal4d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal4d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal4d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">FORM006-VS01-002-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio secretarial / SALA DE OPERACIONES</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-FORM006-VS01-002-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">16-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal3d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal3d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal3d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">FORM006-VS01-001-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio especializado en Ingeniaría Sanitaria / EPIDEMIOLOGÍA & ESTADÍSTICA</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-FORM006-VS01-001-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">07-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Activo</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal2d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal2d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal2d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="border-bottom-color:#000099; border-bottom-style:dashed; border-bottom-width:1px;">
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">PS308-001-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center">Servicio de apoyo Administrativo / RECURSOS HUMANOS</div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><a href="http://www.irotrujillo.gob.pe/files/LS2019/LOC-PS308-001-2019.zip" target="_blank"><img src="../images/icons/zip-icon.png" alt="" width="30" height="30" style="border:none;box-shadow:none;opacity:0.8;filter:alpha(opacity=80);"></a></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">07-08-2019</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104">Finalizado</span></strong></div>
+                                                        </td>
+                                                        <td bgcolor="#E9E9E9">
+                                                            <div align="center"><strong><span class="Estilo104"><button data-target="#openModal1d" data-toggle="modal" class="btn btn-primary btn-lg"><a href="#openModal1d" style="color:#FF0000;">Ver</a></button></span></strong></div>
+                                                            <!-- <div id="openModal1d" class="modalDialog">
+                                                                <div centralize>
+                                                                    <a href="#close" title="Close" class="close">X</a>
+                                                                    <h2>Resultados 003-2019</h2>
+                                                                    <-- <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p> ->
+                                                                    <-- <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p> ->
+                                                                    <table width="320" height="240" border="0" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center" vertical-align="middle"><strong><span class="Estilo104"> Descrip.</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Fecha</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#FFFFB7">
+                                                                                    <div align="center"><strong><span class="Estilo104"> Load</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">Res. FINAL</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center"><strong><span class="Estilo104">24-07-19</span></strong></div>
+                                                                                </td>
+                                                                                <td bgcolor="#E9E9E9">
+                                                                                    <div align="center">
+                                                                                        <a href="http://www.irotrujillo.gob.pe/files/ProcSel2019/ACTA_DECL_DESIERTO_CAS_002-2019-GRLL-GGRGS-IRO-JSU-O.A.U.RR.HH.pdf" target="_blank"><img src="../images/icons/pdf-icon.png" alt="" width="35" height="35" border="0"></a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div> -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+                            <!-- END .panel-block -->
+
+                        </div>
+                    </div>
+
+                    <!-- <div class="sidebar-wrap-dept col-md-4 col-sm-4 col-xs-12 no-pad wow fadeInUp animated" data-wow-delay="1s" data-wow-offset="200">
+
+                        <div class="appointment-form no-pad dept-form">
+                            <div class="alert alert-success" id="appointmentSuccess" style="margin: 0 0 10px 0px;">
+                                <strong>Success!</strong> Your message has been sent to us.
+                            </div>
+                            <div class="alert alert-danger" id="appointmentError" style="margin: 0 0 10px 0px;">
+                                <strong>Error!</strong> There was an error sending your message.
+                            </div>
+                            <div class="appointment-form-title"><i class="icon-hospital2 appointment-form-icon"></i>Formulario</div>
+                            <form class="appt-form app-form" method="post">
+                                <select class="appt-form-select" name="department">
+                                    <option>Consulta</option>
+                                    <option>Sugerencia</option>
+                                    <option>Queja/Reclamo</option>
+                                    <option>Peticiones</option>
+                                </select>
+                                <input type="text" class="appt-form-txt" name="apt-first-name" id="apt-first-name" placeholder="First Name(required)">
+                                <label for="apt-first-name" class="apt-first-name-error error">This field is required.</label>
+
+                                <input type="text" class="appt-form-txt" name="apt-last-name" placeholder="Last Name">
+                                <input type="tel" class="appt-form-txt" name="apt-phno" id="apt-phno" placeholder="Phone(required)">
+                                <label for="apt-phno" class="apt-phno-error error" style="display:block;">This field is required.</label>
+
+                                <input type="email" class="appt-form-txt" name="apt-email" id="apt-email" placeholder="Email(required)">
+                                <label for="apt-email" class="apt-email-error error">This field is required.</label>
+
+                                <--                            <input type="date" class="appt-form-txt" name="apt-date" id="datepicker"> ->
+                                <textarea class="contact2-textarea" placeholder="Mensaje" name="message" id="message"></textarea>
+                                <section class="color-7" id="btn-click">
+                                    <button class="icon-mail btn2-st2 btn-7 btn-7b iform-button">Submit</button>
+                                </section>
+                            </form>
+                        </div>
+
+                        <div class="dept-call-info wow fadeInUp animated idept-call" data-wow-delay="1s" data-wow-offset="200">
+                            <div class="dept-phone">
+                                <div class="dep-ico1-wrap"><i class="icon-phone2 dept-phone-icon"></i></div><span class="ifont-normal">By Phone:</span> +5144-287-236</div>
+                            <div class="dept-phone">
+                                <div class="dep-ico2-wrap"><i class="icon-mail dept-mail-icon"></i></div><span class="ifont-normal">By E-Mail:</span> <a href="mailto:informes@irotrujillo.gob.pe">informes@irotrujillo.gob.pe</a></div>
+                        </div>
+                    </div> -->
+                    <!-- /tabs -->
+
+                </div>
+                <!-- /row -->
+
+                <!--</div>-->
+
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /about -->
+
+    </section>
+
+    <!--Mid Content End-->
+    <!--<section>
+        <div id="settings">
+            <div class="colors">
+            <div class="panel-title">Style Switcher</div> 
+            <div class="panel-color-title">Color Schemes</div>    
+                <ul>
+                    <li><a title="maroon" class="color1 color-switch"><i class="fa fa-check"></i></a></li>
+                            <li><a title="grey" class="color2 color-switch"><i class="fa fa-check"></i></a></li>
+                            <li><a title="green" class="color3 color-switch"><i class="fa fa-check"></i></a></li>
+                            <li><a title="orange" class="color4 color-switch"><i class="fa fa-check"></i></a></li>
+                            <li><a title="red" class="color5 color-switch"><i class="fa fa-check"></i></a></li>
+                            <li><a title="blue" class="color6 color-switch selected"><i class="fa fa-check"></i></a></li>
+
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="settings_link showup"><i class="fa fa-cog"></i></a>
+        </div>
+
+    </section>-->
+
+    <section class="complete-footer">
+        <footer id="footer">
+
+            <div class="container">
+                <div class="row">
+                    <!--Foot widget-->
+                    <div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
+                        <a href="#">
+                            <div class="foot-logo col-xs-12 no-pad"></div>
+                        </a>
+
+                        <address class="foot-address">
+                            <div class="col-xs-12 no-pad"><i class="icon-globe address-icons"></i>IRO Trujillo <br />Mz p Lt 7-A Natasha Alta <br />Trujillo, La Libertad</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-phone2 address-icons"></i>+514 428 7236</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-file address-icons"></i>+514 428 7236</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-mail address-icons"></i>informes@irotrujillo.gob.pe</div>
+                        </address>
+                    </div>
+
+                    <!--Foot widget-->
+                    <div class="col-xs-12 col-sm-6 col-md-3 recent-post-foot foot-widget">
+                        <div class="foot-widget-title">Últimos Posts</div>
+                        <ul>
+                            <li><a href="concurso.html#procesoactual">BASES Concurso CAS 004-2019<br /><span class="event-date">11-09-2019</span></a></li>
+                            <li><a href="concurso.html#procesoactual">Result. Final - Concurso CAS 003-2019<br /><span class="event-date">28-08-2019</span></a></li>
+                            <li><a href="concurso.html#procesoactual">Aptos/Entrevista - Concurso CAS 003-2019<br /><span class="event-date">27-08-2019</span></a></li>
+                          <!-- <li><a href="concurso.html#procesoactual">Resultado Final - Concurso CAP 001-2019<br /><span class="event-date">27-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Resultados Eval.Curric. - Concurso CAS 003-2019<br /><span class="event-date">23-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Locaciónes-2019 - Ampliación de plazos<br /><span class="event-date">22-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Resul. Eval.Tec. - Concurso CAS 003-2019<br /><span class="event-date">21-08-2019</span></a></li> -->
+                          <!-- <li><a href="concurso.html#procesoactual">Locación LOC-PS284-002-2019<br /><span class="event-date">16-08-2019</span></a></li>
+                          <li><a href="concurso.html#procesoactual">Locación LOC-FORM006-VS01-002-2019<br /><span class="event-date">16-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Concurso CAP 001-2019<br /><span class="event-date">14-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Locación LOC-FORM006-VS01-001-2019<br /><span class="event-date">07-08-2019</span></a></li>
+                            <li><a href="concurso.html#procesoactual">Locación LOC-PS308-001-2019<br /><span class="event-date">07-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">BASES Concurso CAS 003-2019<br /><span class="event-date">06-08-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Resultados Finales - Concurso CAS 001-2019<br /><span class="event-date">24-07-2019</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">APTOS Concurso P.A. PFIJO 002-2018<br /><span class="event-date">06-02-2018</span></a></li>
+                            <li><a href="concurso.html#procesoactual">BASES Concurso P.A. PFIJO 002-2018<br /><span class="event-date">01-02-2018</span></a></li>
+                            <li><a href="concurso.html#procesoactual">RESULTADO Concurso PFIJO 001-2018<br /><span class="event-date">01-02-2018</span></a></li> -->
+                            <!-- <li><a href="concurso.html#procesoactual">Concurso CAS 004-2017<br /><span class="event-date">19-10-2017</span></a></li>                                   
+                            <li><a href="concurso.html#procesoactual">Cuadro de Méritos concurso P. FIJO 001-2017<br /><span class="event-date">31-05-2017</span></a></li>
+                            <li><a href="concurso.html#procesoactual">Resultado NOTA FINAL concurso P. FIJO 001-2017<br /><span class="event-date">16-05-2017</span></a></li> -->
+
+                            <!-- <li><a href="concurso.html#procesoactual">Resultado APTOS concurso P. FIJO 001-2017<br /><span class="event-date">15-05-2017</span></a></li> -->
+                            <!-- <li><a href="#">Nuevos equipos en IRO<br /><span class="event-date">01-04-2017</span></a></li> -->
+                            <!-- <li><a href="#">Nueva cara para el IRO<br /><span class="event-date">hace 5 días</span></a></li> -->
+                            <!-- <li><a href="#">Aumenta número de seguidores Fb<br /><span class="event-date">hace 7 días</span></a></li> -->
+                        </ul>
+                    </div>
+
+                    <!--Foot widget-->
+                    <div class="col-xs-12 col-sm-6 col-md-3 recent-tweet-foot foot-widget">
+                        <div class="foot-widget-title">Noticias recientes</div>
+                        <ul>
+                            <li>Se reduce el tiempo de espera: <b>link</b>
+                                <br /><span class="event-date">hace 21 días</span></li>
+                            <li>Se incrementa numero de atenciones: <b>link</b>
+                                <br /><span class="event-date">hace 1 mes</span></li>
+                        </ul>
+                    </div>
+
+                    <!--Foot widget-->
+                    <div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
+                        <div class="foot-widget-title">newsletter</div>
+                        <p>Ingresa tu email, para recibir noticias.</p>
+                        <div class="news-subscribe">
+                            <input type="text" class="news-tb" placeholder="Email Address" />
+                            <button class="news-button">Subscribete</button>
+                        </div>
+                        <div class="foot-widget-title">social media</div>
+                        <div class="social-wrap">
+                            <ul>
+                                <li><a href="https://www.facebook.com/iro.trujillo" target="_blank"><i class="icon-facebook foot-social-icon" id="face-foot" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a></li>
+                                <!-- <li><a href="#"><i class="icon-social-twitter foot-social-icon" id="tweet-foot" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google-plus foot-social-icon" id="gplus-foot" data-toggle="tooltip" data-placement="bottom" title="Google+"></i></a></li> -->
+                                <li><a href="https://www.youtube.com/channel/UCaXOqWlvrLlN3Sx0cIn2_uw" target="_blank"><i class="oicon-youtube foot-social-icon" id="youtb-foot" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i></a></li>
+                                <!-- <li><a href="#"><i class="icon-linkedin foot-social-icon" id="link-foot" data-toggle="tooltip" data-placement="bottom" title="Linked in"></i></a></li> -->
+                                <li><a href="#"><i class="icon-rss foot-social-icon" id="rss-foot" data-toggle="tooltip" data-placement="bottom" title="RSS"></i></a></li>
+
+                                <li><a href="http://irotrujillo.gob.pe:2095" target="_blank"><i class="icon-envelope foot-social-icon" id="mail-foot" data-toggle="tooltip" data-placement="bottom" title="Correo"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <!--Foot widget-->
+                    <div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
+                        <p class="col-xs-12 col-md-5 no-pad">Copyright 2018 IRO Trujillo | All Rights Reserved | Designed by <a href="http://www.SLyLuRK.com" target="_blank">SLyLuRK</a></p>
+                        <ul class="foot-menu col-xs-12 col-md-7 no-pad">
+                            <li><a href="about-us-1.html">Galería</a></li>
+                            <li><a href="gallery-3-columns.html">Externo</a></li>
+                            <li><a href="blog-masonry-full-width.html">Área Academica</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="nosotros.html">Conocenos</a></li>
+                            <li><a href="index-2.html">Inicio</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--JS Inclution-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-new/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexisel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imedica.min.js"></script>
+    <script type="text/javascript" src="js/custom-imedicajs.min.js"></script>
+    <script type="text/javascript" src="js/imedica-js/view.appoinment.js"></script>
+
+    <link rel="stylesheet" href="../../code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="../../code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script>
+        if (!Modernizr.inputtypes.date) {
+            $("#datepicker").datepicker();
+        }
+    </script>
+
+</body>
+
+<!-- Mirrored from imedica.sharkslab.com/HTML/departments.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2017 19:19:31 GMT -->
+
+</html>

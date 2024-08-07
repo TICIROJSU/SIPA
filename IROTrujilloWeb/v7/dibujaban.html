@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Bandera Ejercicio CU01195E, http://www.aprenderaprogramar.es/</title>
+    <meta charset="utf-8"/>   
+		<script>
+			function dibujaBandera(){
+				var ctx = document.getElementById ('canvas');
+				var contenido = ctx.getContext ('2d');
+							   
+				//Rectángulo superio, rojo
+				contenido.fillStyle = 'red';
+				contenido.fillRect (55, 55, 400, 60);
+				
+				//Rectángulo intermedio, amarillo
+				contenido.fillStyle = 'yellow';
+				contenido.fillRect (55, 115, 400, 50);
+				
+				//Rectángulo inferior, rojo
+				contenido.fillStyle = 'red';
+				contenido.fillRect (55, 165, 400, 60);
+			}
+		</script>
+
+		<!-- stilo para parrafo oculto en imagen // y para el ultimo <p>-->
+		<style type="text/css">
+			    .hover {
+			        display: inline-block;
+			        position: relative;
+			        text-align: center;
+			    }
+			    .hover p {
+			        background: none repeat scroll 0 0 #334455;
+			        bottom: 0;
+			        color: #FFFFFF;
+			        margin: 0;
+			        position: absolute;
+			        text-align: center;
+			        visibility: hidden;
+			        width: 100&#37;; /* aquí debería decir 100% */
+			    }
+			    .hover:hover p {
+			        visibility: visible;
+			    }
+
+
+			.emailprin{
+				color: #000 ;
+				font-size: 15px;
+				position: absolute;
+				margin: -20px 0px 0px 689px;
+				list-style: none;
+				border-right: 1px solid #ccc;
+			    display: inline;
+			    padding-right: 10px;
+			}
+			.telefonoprin{
+				color: #000 ;
+				font-size: 15px;
+				position: absolute;
+				margin: -20px 0px 0px 830px;
+				list-style: none;
+			}
+			.imagenprin{
+				margin: 0px 0px 0px 805px;
+			}
+			.hand{
+				background-image: url(images/dept-01.jpg);
+				position: absolute;
+				margin: -19px 0px 0px -143px;
+			    width:16px;
+			    height:16px;			    
+			}
+			.hand2 {
+				background-image: url(images/dept-02.jpg);
+				position: absolute;
+				margin: -20px 0px;
+			    width:16px;
+			    height:16px;
+			}
+		</style>
+
+	</head>
+	<body onload="dibujaBandera()">
+		<!-- <<<ejemplo Api Canvas HTML y JavaScript Dibujar rectángulo de color o bandera país>>> -->
+		<!-- <canvas id="canvas" width="400" height="300"></canvas> -->
+
+
+		<!-- <<ejemplo El párrafo permanece oculto y al pasar por encima de la imagen se vuelve visible.>> -->
+		<!-- <div class="hover">
+        	<img src="images/dept-04.jpg"/>
+	        <p>Texto de parrafo<br/>linea 2 de parrafo</p>
+	    </div> -->
+
+
+	    <br/>
+	    <br/>
+
+	     	<p class="emailprin"> Contactenos </p>
+            <p class="telefonoprin"> 0297 444 32 61 </p>
+            <div class="imagenprin">
+                  <p class="hand" style="background-position: 0 -1320px;"></p>
+                  <p class="hand2" style="background-position: -66px -462px;"></p>
+            </div>  
+
+
+	</body>
+</html>

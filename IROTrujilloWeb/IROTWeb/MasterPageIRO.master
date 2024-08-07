@@ -1,0 +1,378 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageIRO.master.cs" Inherits="IROTWeb_MasterPageIRO" %>
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+    <%--<title></title>--%>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderTitle1" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>IRO-Trujillo</title>
+
+    <link href="../../Estilos/css/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../../Estilos/images/favicon.png" />
+	<link href="../../Estilos/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../Estilos/css/blue.css" id="style-switch" />
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="../../Estilos/rs-plugin/css/settings.css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="../../Estilos/css/inline.min.css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <header>
+		<div id="search-overlay">
+			<div class="container">
+				<div id="close">X</div>	  
+				<input id="hidden-search" type="text" placeholder="Start Typing..." autofocus="autofocus" autocomplete="off"  /> <!--hidden input the user types into-->
+				<input id="display-search" type="text" placeholder="Start Typing..." autofocus="autofocus" autocomplete="off" /> <!--mirrored input that shows the actual input value-->
+			</div>
+		</div>       
+          
+		<!--Topbar-->
+		<div class="topbar-info no-pad">                    
+			<div class="container">                     
+				<div class="social-wrap-head col-md-2 no-pad">
+					<ul>
+					<li><a href="https://www.facebook.com/iro.trujillo" target="_blank"><i class="icon-facebook head-social-icon" id="face-head" data-original-title="" title=""></i></a></li>
+					<li><a href="#"><i class="icon-social-twitter head-social-icon" id="tweet-head" data-original-title="" title=""></i></a></li>
+					<li><a href="#"><i class="icon-rss head-social-icon" id="rss-head" data-original-title="" title=""></i></a></li>
+					<li><a href="https://www.office.com/" target="blanck_"><i class="icon-envelope head-social-icon" id="mail-head" data-original-title="" title=""></i></a></li>
+					<li><a href="#"><i class="icon-user head-social-icon" data-original-title="" title=""></i></a></li>
+					</ul>
+				</div>                            
+				<div class="top-info-contact pull-right col-md-6">¡Llámenos hoy! +51 4428 7236  |    informes@irotrujillo.gob.pe  
+				<div id="search" class="fa fa-search search-head" style="height: 23px;"></div>
+				</div>                      
+			</div>
+		</div><!--Topbar-info-close-->                        
+            
+        <div id="headerstic">
+            
+            <div class=" top-bar container">
+				<div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">                          
+								  <button type="button" class="navbar-toggle icon-list-ul" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+								  </button>
+								  <button type="button" class="navbar-toggle icon-rocket" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+									<span class="sr-only">Toggle navigation</span>
+								  </button>
+								  <a href="www.irotrujillo.gob.pe/v7/index.php"><div class="logo"></div></a>
+							</div>
+                            
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right">
+									<li class="inactive"><a href="http://www.irotrujillo.gob.pe/v7/index.php">Inicio</a>							
+									</li>
+
+									<li class="dropdown">
+									    <a href="http://www.irotrujillo.gob.pe/v7/nosotros.php" ><i class="icon-cog"></i>Conocenos</a>
+									</li>
+
+									
+									
+<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-file"></i>Servicios<b class="icon-angle-down"></b></a>
+	<ul class="dropdown-menu">
+		<li><a href="http://www.irotrujillo.gob.pe/v7/estadistic.php">Estadística</a></li>
+		<li><a href="http://www.irotrujillo.gob.pe/v7/convoc.php">Convocatorias</a></li>
+		<li><a href="http://190.116.184.171/irofelectro" target="_blank">Facturación Electrónica</a></li>
+	</ul>
+</li>
+
+									<li class="dropdown">
+										<a href="http://www.peru.gob.pe/transparencia/pep_transparencia_lista_planes_frame.asp?id_entidad=14261&id_tema=1" target="_blank">
+											<i class="icon-pencil"></i>Transparencia<b class="icon-angle-down"></b>
+										</a>
+									</li>
+									
+									<li class="dropdown">
+                                        <a href="http://www.irotrujillo.gob.pe/v7/contact.php"><i class="icon-envelope"></i>Contactanos<b class="icon-angle-down"></b></a>
+
+									</li>
+								</ul>
+							</div>
+                        </div><!-- /.container-fluid -->
+                    </nav>
+				</div>    
+            </div><!--Topbar End-->
+        </div>
+      
+    </header>
+    
+
+    <section class="complete-content">
+	<div id="about-us-version-two">	
+    <!--Mid Content Start-->
+    
+    
+     <div class="about-intro-wrap pull-left">
+     
+             <div class="bread-crumb-wrap ibc-wrap-1">
+            	<div class="container">
+            <!--Title / Beadcrumb-->
+                 	<div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
+                    	<div class="bread-heading">
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderTitle3" runat="server">
+    </asp:ContentPlaceHolder>
+							
+						</div>
+                        <div class="bread-crumb pull-right">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about-us-1.html">Conocenos</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                 </div>
+             </div> 
+
+     
+         <div class="container">
+         	
+            <div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-pad wow fadeInLeft animated" data-wow-delay="0.5s">
+			    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+
+                    <asp:ContentPlaceHolder ID="CPHSupIzq" runat="server">
+                    </asp:ContentPlaceHolder>
+                
+			    </div><!--col-md-6 first end-->
+			
+			    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 no-pad">
+
+                    <asp:ContentPlaceHolder ID="CPHSupDer" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div><!--col-md-6 second end-->
+			
+			</div><!--col-md-12 end-->
+			
+          </div>
+         
+         </div>
+     </div>
+     
+	 
+	 
+	 <div class="about-content-wrap">
+	 <div class="container ">
+         <div class="row  top-pad choice-feature ">
+             <!--Latest Post Start-->
+             
+            <div class="col-xs-12 col-sm-12 col-md-6 pull-left wow fadeInLeft animated" data-wow-delay="0.5s" data-wow-offset="100">
+
+                <asp:ContentPlaceHolder ID="CPHInfIzq" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+                   
+                 
+                 <!--Latest Post End-->
+             
+                 <!--Departments Start-->
+                 
+                    <div class="col-xs-12 col-sm-12 col-md-6 pull-right  wow fadeInRight animated" data-wow-delay="0.5s" data-wow-offset="100">
+
+                <asp:ContentPlaceHolder ID="CPHInfDer" runat="server">
+                </asp:ContentPlaceHolder>
+
+                    </div>
+                 </div>
+                 </div>  <!--Departments End-->
+	 				</div><!--about content wrap-->
+	 
+	 
+	 
+     <div class="doctor-bg wow fadeInLeft animated" data-wow-delay="1.6s">
+		<div class="container" style="display: none; ">
+		
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
+		<div class="everythig-thing-title">
+		<h2>Más sobre nosotros</h2>
+		<p>Si quieres mayor información o desear contactarte con nosotros, lo puedes hacer usando cualquiera de las siguientes opciones disponibles:</p>
+		</div><!--everythig-thing-title-->
+		</div><!--col-12 end-->
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom-padd">
+		
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow fadeInLeft animated" data-wow-delay="1s">
+		<div class="need-section">
+		<div class="service-icon-container service-icon-container-section rot-y"><i class=" fa fa-hospital-o dept-icon c-form  panel-icon"></i></div>
+		<h3>Formulario de contacto</h3>
+		<p>Aqui puedes llenar tus datos y hacernos tus preguntas.</p>
+<a href="#" class="read-more-right-arrow">Leer más &raquo;</a>
+		</div><!--need section-->
+		</div><!--col-md 4 end-->
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow fadeInLeft animated" data-wow-delay="1.3s">
+		<div class="need-section">
+		<div class="service-icon-container service-icon-container-section rot-y"><i class=" icon-medkit dept-icon c-form  panel-icon"></i></div>
+		<h3>Soporte</h3>
+		<p>A traves de aqui podras ponerte en contacto con el equipo de soporte.</p>
+<a href="#" class="read-more-right-arrow">Leer más &raquo;</a>
+		</div><!--need section-->
+		</div><!--col-md 4 end-->
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow fadeInLeft animated" data-wow-delay="1.6s">
+		<div class="need-section">
+		<div class="service-icon-container service-icon-container-section rot-y"><i class=" fa fa-calendar dept-icon c-form  panel-icon"></i></div>
+		<h3>Solicitar Cita</h3>
+		<p>Aqui proximamente podras solicitar tu cita On-line para consulta General.</p>
+<a href="#" class="read-more-right-arrow">Leer más &raquo;</a>
+		</div><!--need section-->
+		</div><!--col-md 4 end-->
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow fadeInLeft animated" data-wow-delay="1.9s">
+		<div class="need-section">
+		<div class="service-icon-container service-icon-container-section rot-y"><i class=" fa fa-question dept-icon c-form  panel-icon"></i></div>
+		<h3>FAQs</h3>
+		<p>En esta sección encontraras las preguntas y respuestas mas comunes que han hecho los pacientes.</p>
+<a href="#" class="read-more-right-arrow">Leer más &raquo;</a>
+		</div><!--need section-->
+		</div><!--col-md 4 end-->
+		
+		</div><!--col-12 end-->
+		</div><!--container-->
+     </div><!--row-->
+     
+  
+    <!--Mid Content End-->
+    </div><!--about-us-version-two-->
+    </section>
+
+
+
+    <section>
+		<div id="settings">
+            <asp:ContentPlaceHolder ID="CPHSettings" runat="server"></asp:ContentPlaceHolder>
+
+		</div>
+    </section>
+    
+    
+    
+<section class="complete-footer">
+    <footer id="footer">
+    
+      <div class="container">
+                	<div class="row">
+                    	<!--Foot widget-->
+                    	<div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
+                        <a href="#"><div class="foot-logo col-xs-12 no-pad"></div></a>
+
+                        <address class="foot-address">
+                        	<div class="col-xs-12 no-pad"><i class="icon-globe address-icons"></i>IRO Trujillo <br />Mz p Lt 7-A Natasha Alta <br />Trujillo, La Libertad</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-phone2 address-icons"></i>+514 428 7236</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-file address-icons"></i>+514 428 7236</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-mail address-icons"></i>informes@irotrujillo.gob.pe</div>
+                        </address>
+                        </div>
+
+                        <!--Foot widget-->
+                        <div class="col-xs-12 col-sm-6 col-md-3 recent-post-foot foot-widget">
+                        	<div class="foot-widget-title">Últimos Posts</div>
+                        	<ul>
+		<li><a href="concurso.html#procesoactual">Cuadro de Méritos concurso P. FIJO 001-2017<br /><span class="event-date">31-05-2017</span></a></li>
+		<li><a href="concurso.html#procesoactual">Resultado NOTA FINAL concurso P. FIJO 001-2017<br /><span class="event-date">16-05-2017</span></a></li>
+		<li><a href="concurso.html#procesoactual">Resultado Prueba escrita concurso P. FIJO 001-2017<br /><span class="event-date">16-05-2017</span></a></li>
+                            </ul>
+                        </div>
+
+                         <!--Foot widget-->
+                        <div class="col-xs-12 col-sm-6 col-md-3 recent-tweet-foot foot-widget">
+                        	<div class="foot-widget-title">Noticias recientes</div>
+                        	<ul>
+                            	<li>Se reduce el tiempo de espera: <b>link</b><br /><span class="event-date">23-01-2017</span></li>
+                                <li>Se incrementa numero de atenciones: <b>link</b><br /><span class="event-date">16-01-2017</span></li>
+                            </ul>
+                        </div>
+
+                        <!--Foot widget-->
+                        <div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
+                        	<div class="foot-widget-title">newsletter</div>
+                        	<p>Ingresa tu email, para recibir noticias.</p>
+
+							<form id=""contactForm" action="procesnew.php" method="post" name="form">
+									<input name="nombre" type="text" class="news-tb" placeholder="Nombre"/><br />
+									<input name="email" type="text" class="news-tb" placeholder="Email Address"/>
+									<input type="submit" name="Submit" value="Subscribete" class="news-button"/>
+								</form>
+
+                            <!-- <div class="news-subscribe"><input type="text" class="news-tb" placeholder="Email Address" /><button class="news-button">Subscribete</button></div> -->
+
+							<div class="foot-widget-title">social media</div>
+                            <div class="social-wrap">
+							<ul>
+							<li><a href="https://www.facebook.com/iro.trujillo" target="_blank"><i class="icon-facebook foot-social-icon" id="face-foot" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a></li>
+							<!-- <li><a href="#"><i class="icon-social-twitter foot-social-icon" id="tweet-foot" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a></li>
+							<li><a href="#"><i class="icon-google-plus foot-social-icon" id="gplus-foot" data-toggle="tooltip" data-placement="bottom" title="Google+"></i></a></li> -->
+							<li><a href="https://www.youtube.com/channel/UCaXOqWlvrLlN3Sx0cIn2_uw" target="_blank"><i class="oicon-youtube foot-social-icon" id="youtb-foot" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i></a></li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCaXOqWlvrLlN3Sx0cIn2_uw" target="_blank" >
+									<i class="fa-caret-square-o-right" id="youtb-foot" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i>
+								</a>
+							</li>
+							<!-- <li><a href="#"><i class="icon-linkedin foot-social-icon" id="link-foot" data-toggle="tooltip" data-placement="bottom" title="Linked in"></i></a></li> -->
+							<li><a href="#"><i class="icon-rss foot-social-icon" id="rss-foot" data-toggle="tooltip" data-placement="bottom" title="RSS"></i></a></li>
+
+							<li><a href="http://irotrujillo.gob.pe:2095" target="_blank"><i class="icon-envelope foot-social-icon" id="mail-foot" data-toggle="tooltip" data-placement="bottom" title="Correo"></i></a></li>
+							</ul>
+						</div>
+                        </div>
+
+                    </div>
+               	 </div>       
+         
+    </footer>
+    
+    <div class="bottom-footer">
+    <div class="container">
+        <div class="row">
+			<!--Foot widget-->
+			<div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
+			<p class="col-xs-12 col-md-5 no-pad">Copyright 2018 IRO Trujillo | All Rights Reserved</p>
+			<ul class="foot-menu col-xs-12 col-md-7 no-pad">
+				<li><a href="about-us-1.html">Galería</a></li>    
+				<li><a href="gallery-3-columns.html">Externo</a></li>
+				<li><a href="blog-masonry-full-width.html">Área Academica</a></li>    
+				<li><a href="#">Servicios</a></li>
+				<li><a href="nosotros.html">Conocenos</a></li>
+				<li><a href="index-2.html">Inicio</a></li>
+			</ul>
+			</div>
+		</div>
+    </div> 
+    </div>
+    
+    </section>
+    
+  
+    
+    <!--JS Inclution-->
+    <script type="text/javascript" src="../../Estilos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/jquery-ui-1.10.3.custom.min.js"></script>  
+    <script type="text/javascript" src="../../Estilos/bootstrap-new/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/jquery.sticky.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/wow.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/jquery.flexisel.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/jquery.imedica.min.js"></script>
+    <script type="text/javascript" src="../../Estilos/js/custom-imedicajs.min.js"></script>
+	<script type="text/javascript" src="../../Estilos/js/custom.js"></script>
+
+</body>
+
+<!-- Mirrored from imedica.sharkslab.com/HTML/about-us-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2017 18:08:42 GMT -->
+</html>

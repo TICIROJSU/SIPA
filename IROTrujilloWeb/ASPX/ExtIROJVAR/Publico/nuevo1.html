@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="tu_otra_referencia.js"></script>
+	
+</head>
+<body>
+
+    <div>
+        <div id="dResult"></div>
+		<input type="text" id="txtDNI" name="txtDNI" autofocus />
+        <button onclick="realizarConsulta()">Realizar Consulta</button>
+    </div>
+
+
+
+    <script>
+        async function realizarConsulta() {
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            myHeaders.append("Authorization", "Bearer 61afb73b2eb4a82e5a710bdbd8fe1fa9942651d1ea902fbafff3451eedfbac65");
+
+            var raw = JSON.stringify({
+                "dni": $('#txtDNI').val()
+            });
+
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+
+            fetch("https://apiperu.dev/api/dni", requestOptions)
+                .then(response => response.text())
+                .then(result => { console.log(result); fResult(result); })
+                .catch(error => console.log('error', error));
+        }
+
+        function fResult(result) {
+            $('#dResult').html(result);
+        }
+    </script>
+</body>
+
+
+
+
+
+
+</html>
+
+

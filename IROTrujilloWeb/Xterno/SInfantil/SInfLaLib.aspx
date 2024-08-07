@@ -1,0 +1,118 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SInfLaLib.aspx.cs" Inherits="Xterno_SInfantil_SInfLaLib" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <title>Salud Infantil - LA LIBERTAD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.diresalalibertad.gob.pe/warmi/imagespropias/favicongeresa.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/mystylefer.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/flaticon.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/icomoon.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/style.css">
+    <link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/bootstrap.css">
+	<link rel="stylesheet" href="https://www.diresalalibertad.gob.pe/warmi/css/style2.css">
+	<script src="https://www.diresalalibertad.gob.pe/warmi/js/script.js"></script>
+	<style type="text/css">.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };</style>
+	<style type="text/css" id="tts-styles">[data-tts-block-id].tts-active {background: rgba(206, 225, 255, 0.9) !important;} [data-tts-sentence-id].tts-active {background: rgba(0, 89, 191, 0.7) !important;}</style>
+	<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/50/2/intl/es_ALL/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/50/2/intl/es_ALL/util.js"></script>
+</head>
+<body style="padding-top: 0px !important" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+	<section style="background-image:url(https://www.diresalalibertad.gob.pe/warmi/imagespropias/pattern2.png) ;background-color: #d53e4f;">
+	<div class="container">
+	<div class="row justify-content-left">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5 heading-section ftco-animate fadeInUp ftco-animated" id="cazador4" style="">                  
+                    <h2 id="cazador2" class="mb-4">Salud Infantil</h2>
+                 	<h6 id="cazador3" class="mb-4">Repositorio de Información en Salud La Libertad</h6>                    
+                    <h3 id="cazador">REGIÓN LA LIBERTAD</h3>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 heading-section ftco-animate fadeInUp ftco-animated">              
+                   <!-- <img id="cazador5" src="imagespropias/diresall_letrablanca_smalv2.png" >-->
+                </div>
+            </div>
+        </div>
+</section>
+<nav id="menu">
+  <input type="checkbox" id="responsive-menu" onclick="updatemenu()"><label></label>
+  <ul>
+    <li><a href="index.php">Inicio</a></li>
+    <li><a href="">Estadisticas</a>  
+    
+    </li>
+    <li><a class="dropdown-arrow" href="">Aplicativos</a>
+    <ul class="sub-menus">
+        <li><a href="https://forms.gle/k5Hkg1N6CtFxru3k6" target="_Black">Parque Informatico</a></li>
+          <li><a href="https://diresalalibertad.gob.pe/warmi/app/APLICATIVO%20MMD.rar" target="_Black">MMD</a></li>
+          <li><a href="https://arcg.is/0qaqOT" target="_Black">GeoreferenciaGest</a></li>
+          <li><a href="https://sdadolescente.minsa.gob.pe/evaluacion-adolescente/login" target="_Black">Eva. Adolescente</a></li>
+    </ul>
+    </li>
+    <li><a class="dropdown-arrow" href="">Normativas</a>
+      <ul class="sub-menus">
+        <li><a href="https://drive.google.com/drive/folders/1rMYPYMjj_ZGRsS__gFfHqdtKUchEUng8?usp=sharing" target="_Black">Planificación Fam.</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1EjBtICpk6DgnlVbT8oxppnOcUjNfKkJa?usp=sharing" target="_Black">Materno Neonatal</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1lPszcrDMJ2a0GC8b_3r7UHb8tEpfmkOR?usp=sharing" target="_Black">EV Adolescente</a></li>
+             <li><a href="https://www.youtube.com/channel/UCRj91QkM5DywGrLllGPWB6Q" target="_Black">Canal de Youtube</a></li>
+      </ul>
+    </li>
+    <li><a href="https://drive.google.com/drive/folders/1e4Q9VMRAgSpzqc2lRKrGQlBDnFsfjP2E?usp=sharing" target="_Black">Documentos Técnicos</a></li>
+  </ul>
+</nav>
+    <section class="ftco-section" style="padding-top: 30px" >
+        <div class="container">
+            <iframe width="100%" height="700" src="https://datastudio.google.com/embed/reporting/beb66819-88b4-408d-94e2-f9d41b9dd029/page/tWDGB" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+    </section>
+
+    <footer>
+        <section class="well1" style="background-image:url(imagespropias/pattern2.png) ;background-color: #32373b; color: #fff">
+            <div class="container">
+                <p class="rights">                	
+                	<span>Copyright © 2022 <a href="http://www.diresalalibertad.gob.pe/">GERESA Salud Infantil</a>. Todos los derechos reservados.<a style="cursor: pointer; color: #5faaf2; !important;" onclick="window.open('acercade.php','Acerca de...','width=400,height=850')">Acerca De</a></span>
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff0077"></circle>
+        </svg>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/myjsfdder.js"></script>
+
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/popper.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/bootstrap.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.easing.1.3.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.waypoints.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.stellar.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.animateNumber.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/bootstrap-datepicker.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/jquery.timepicker.min.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/google-map.js"></script>
+    <script src="https://www.diresalalibertad.gob.pe/warmi/js/main.js"></script>
+
+
+
+</body>
+</html>

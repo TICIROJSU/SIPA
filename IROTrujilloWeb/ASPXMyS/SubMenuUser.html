@@ -1,0 +1,12 @@
+﻿<a class="dropdown-item d-none" href="profile.html">My Profile</a>
+<a class="dropdown-item" onclick="functrigger();">
+    <i class="fa fa-power-off"></i> <span>Cerrar Sesion</span>
+</a>
+<script>
+    function functrigger() {
+        varc = confirm("Esta seguro de Cerrar la Sesion?");
+        if (varc) {
+            location = "../Inicio/Votacion.aspx"; 
+        }
+    }
+</script>

@@ -1,0 +1,141 @@
+<html>
+    <head>
+
+
+        <link rel="shortcut icon" href="../../Estilos/imagenes/favicon.png" type="image/x-icon" /><meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        <!-- fullCalendar -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/fullcalendar/dist/fullcalendar.min.css" />
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/font-awesome/css/font-awesome.min.css" />
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/Ionicons/css/ionicons.min.css" />
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../Estilos/dist/css/AdminLTE.min.css" />
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../Estilos/dist/css/skins/_all-skins.min.css" />
+        <!-- Morris chart -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/morris.js/morris.css" />
+        <!-- jvectormap -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/jvectormap/jquery-jvectormap.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+        <!-- Daterange picker -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+        <!-- bootstrap wysihtml5 - text editor -->
+        <link rel="stylesheet" href="../../Estilos/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />
+        <!-- Boton subir -->
+        <link rel="stylesheet" href="../../Estilos/BotonIrArriba/Botonsubir.css" />
+        <!-- iCheck -->
+        <link rel="stylesheet" href="../../Estilos/plugins/iCheck/square/blue.css" />
+        <!-- Select2 -->
+        <link rel="stylesheet" href="../../Estilos/bower_components/select2/dist/css/select2.min.css" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Google Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" />
+        <script src="Estilos/Funciones/funciones.js"></script>
+          <!-- Development version: -->
+          <!-- <script>document.write('<script src="../Funciones/funciones.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
+        <script type="text/javascript" src="../../Estilos/Funciones/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="../../Estilos/Funciones/jquery.canvasjs.min.js"></script>
+
+    </head>
+    <body>
+
+        <div id="dResult"></div>
+
+        <script>
+
+			var vResult="";
+		
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            myHeaders.append("Authorization", "Bearer 61afb73b2eb4a82e5a710bdbd8fe1fa9942651d1ea902fbafff3451eedfbac65");
+
+            var raw = JSON.stringify({
+            "dni": "71265902"
+            });
+
+            var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+            };
+
+            fetch("https://apiperu.dev/api/dni", requestOptions)
+            .then(response => response.text())
+            //.then(result => console.log(result))
+			.then(result => { console.log(result); fResult(result); })
+            .catch(error => console.log('error', error)); 
+			
+			function fResult(result)
+			{
+				$('#dResult').html(vResult);
+			}
+			
+        </script>
+    </body>
+
+
+
+
+
+<!-- jQuery 3 -->
+<script src="/ASPX/Estilos/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+   $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/ASPX/Estilos/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- datepicker -->
+<script src="/ASPX/Estilos/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+<!-- Bootstrap WYSIHTML5 -->
+<script src="/ASPX/Estilos/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="/ASPX/Estilos/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/ASPX/Estilos/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="/ASPX/Estilos/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/ASPX/Estilos/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/ASPX/Estilos/dist/js/demo.js"></script>
+<!--BOTON SUBIR-->
+<script src="/ASPX/Estilos/BotonIrArriba/botonsubir.js"></script>
+<!-- ICHECK -->
+<script src="/ASPX/Estilos/plugins/iCheck/icheck.min.js"></script>
+<!-- JQUERY -->
+<script type="text/javascript" src="/ASPX/Estilos/Funciones/jquery-1.12.1.min.js"></script>
+  <!-- Select2 -->
+  <script src="/ASPX/Estilos/bower_components/select2/dist/js/select2.full.min.js"></script>
+  <!-- InputMask -->
+  <script src="/ASPX/Estilos/plugins/input-mask/jquery.inputmask.js"></script>
+  <script src="/ASPX/Estilos/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+  <script src="/ASPX/Estilos/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+  <!-- FLOT CHARTS -->
+  <script src="/ASPX/Estilos/bower_components/Flot/jquery.flot.js"></script>
+  <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+  <script src="/ASPX/Estilos/bower_components/Flot/jquery.flot.resize.js"></script>
+  <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+  <script src="/ASPX/Estilos/bower_components/Flot/jquery.flot.pie.js"></script>
+  <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+  <script src="/ASPX/Estilos/bower_components/Flot/jquery.flot.categories.js"></script>
+
+
+
+</html>

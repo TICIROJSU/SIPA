@@ -1,0 +1,42 @@
+.contenedor{
+  box-sizing:border-box;
+  float:left;
+  width:50%;
+  padding:10px;
+}
+.lienzo{ 
+  border:1px solid #d9d9d9;  
+}
+#lienzo1{float:right;}
+#lienzo2{width:50%;float:left;}
+#lienzo3{width:50%;float:left;}
+
+
+#canvas{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #d9d9d9;
+}
+
+body {font-size: 100%}
+
+p {font-size: 1.5em;}
+
+@media screen and (max-width: 64em) {
+ body {
+      font-size: 90%;
+   }
+}
+
+@media screen and (max-width: 50em) {
+ body {
+       font-size: 75%;
+   }
+}
+
+@media screen and (max-width: 30em) {
+   body {
+        font-size: 50%;
+  }
+}

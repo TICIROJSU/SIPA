@@ -1,0 +1,55 @@
+<%@ Page Language="VB" Debug="true" %>
+<%@ Import Namespace="System.IO" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link href="adwords.css" rel="stylesheet" type="text/css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Upload CSV</title>
+</head>
+<body>
+
+<script runat="server">
+Sub UploadFile_Clicked(Sender as Object, e as EventArgs)
+Dim str As Stream
+
+str = loFile.PostedFile.InputStream()
+Dim sr As StreamReader = New StreamReader(str)
+
+Dim tokens as String() = Nothing
+Dim line, token, t as String
+
+Dim i as integer
+for i = 1 to 6
+line = sr.ReadLine()
+next i
+response.write("<table>")
+
+do
+line = sr.ReadLine()
+response.write("<tr>")
+tokens = line.Split(ControlChars.Tab)
+for each token in tokens
+response.write("<td>"+token+"</td>")
+next
+response.write("</tr>")
+response.write(line.tostring())
+loop until line is nothing
+response.write("</table>")
+
+sr.close()
+
+End sub
+</script>
+
+<form action="upload.aspx" method="post" enctype="multipart/form-data" runat="server">
+<fieldset>
+<legend>Select a file to upload:</legend>
+<p><input id="loFile" type="file" runat="server"></p>
+<p><input type="submit" OnServerClick="UploadFile_Clicked" class="clientloginsubmit" name="Submit" value="Upload AdWords CSV" runat="server" /></p>
+</fieldset>
+</form>
+
+</body>
+</html>

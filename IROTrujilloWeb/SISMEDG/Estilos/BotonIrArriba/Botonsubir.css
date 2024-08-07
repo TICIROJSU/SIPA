@@ -1,0 +1,155 @@
+
+/* El estilo ir-arriba tiene que ver con el boton flotante presente en la vista Padron(index) el cual permite que la pantalla
+suba a la parte superior*/
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#3c8dbc;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;    
+	right:20px;
+}
+/* FIN ir-arriba*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+
+/* El estilo nuevoheader tiene que ver con la barra azul que se encuentra en la parte superior de la vista del Login (index)*/
+.nuevoheader{
+    position:relative;
+    width: auto;
+    height:8%;
+    background-color: #3c8dbc; 
+    border-color: #367fa9;
+    background-color: #3c8dbc; 
+    
+}
+@media (max-width:767px){
+    .nuevoheader{
+        position:relative;
+        height: 7%;
+    }
+}
+/*FIN nuevoheader*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* El estilo cazador permite dar estilo a la caja de busqueda*/
+/* UBICACION: PadronGeo/index.php AND Padron/index.php */
+.cazador{
+    width: 190px;
+    margin-top: -30px;
+    
+}
+
+@media (max-width:411px){
+    .cazador{
+            width: 110px;
+            margin-top: -30px;
+    }
+}
+/* FIN cazador*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* El estilo cazador1 permite darle ajustes al combo (DNI,PROVINCIA, DIS.POBLADO, ETC)*/
+/* UBICACION: PadronGeo/index.php AND Padron/index.php */
+
+.cazador1{
+    width:67%;
+    margin-left: -130px;
+    margin-top: 0px;
+}
+
+@media (max-width:411px){
+    .cazador1{
+            width: 100px;
+            margin-left: -105px;
+    }
+}
+/* FIN cazador1*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+
+/* El estilo de cazador2 tiene que ver con el titulo "CONSULTA POR REDES DE SALUD" que se encuentra en la pagina Padron*/
+/* A continuacion se muestra los distintos atributos para cada resolucion de pantalla*/
+/* UBICACION: Header.php */
+
+.cazador2{
+   font-weight: 700;
+   font-size: 15px;
+   color: #fff;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+@media (max-width:1082px){
+    .cazador2{
+           
+            margin: 15px 0px -38px 0px;
+            width: 115%;
+            text-align: center;
+    }
+}
+@media (max-width:1024px){
+    .cazador2{
+           
+            margin: 15px 0px -38px 0px;
+            text-align: center;
+            width: 100%;
+    }
+}
+@media (max-width:991px){
+    .cazador2{
+        text-align: center;
+        margin: 15px 0px -35px 4px;
+    }
+}   
+
+@media (max-width:767px){
+    .cazador2{
+        text-align: center;
+           
+                margin: 15px 0px -35px -11px;
+    }
+}   
+
+@media (max-width:414px){
+    .cazador2{
+        text-align: center;
+        margin: 15px 0px -35px -43px;
+        font-size: 14px;
+    }
+}   
+@media (max-width:320px){
+    .cazador2{
+        text-align: center;
+        margin: 15px 0px -35px -43px;
+        font-size: 12px;
+    }
+}   
+
+/* FIN cazador2*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+
+/* El estilo de cazador3 tiene que ver con el Dropdown User Menu el cual presentaba fallas en el padding-bottom que se encuentra en la pagina Padron*/
+/* A continuacion se muestra los distintos atributos para cada resolucion de pantalla*/
+/* UBICACION: Header.php */
+
+#cazador3{
+    padding-bottom:36px;
+    font-size:13px;
+}
+@media (max-width:991px){
+    #cazador3{
+        padding-bottom:16px;
+    }
+}
+  
+

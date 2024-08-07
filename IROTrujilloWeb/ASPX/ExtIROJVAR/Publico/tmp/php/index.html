@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUENTE WEB</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Custom Css -->
+    <style>
+         :root {
+            --bs-success-rgb: 71, 222, 152 !important;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: Apple Chancery, cursive;
+        }
+        
+        mark {
+            background-color: yellow;
+        }
+    </style>
+    <!-- End of Custom Css -->
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success bg-gradient" id="topNavBar">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.youtube.com/channel/UCQt66csrx8LcVsI66hnu2fQ">
+            FUENTE WEB
+            </a>
+        </div>
+    </nav>
+    <div class="container py-3" id="page-container">
+        <h3>TEXTO A VOZ</h3>
+        <hr>
+        <small>CONVIERTE TU TEXTO A VOZ :D</small>
+        <div class="content">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- Text Area Form -->
+                    <form action="" id="text-form">
+                        <div class="form-goup">
+                            <label for="message" class="control-label">Ingrese su mensaje para convertir</label>
+                            <textarea name="message" id="message" rows="10" class="form-control rounded-0">este es un texto</textarea>
+                        </div>
+                        <center>
+                            <button class="btn btn-primary py-2" id="submit">HABLAR</button>
+                        </center>
+                    </form>
+                    <!-- End of Text Area  Form-->
+                    <!-- Display Container of the Text -->
+                    <div id="display" class="py-3">
+
+                    </div>
+                    <!-- End Display Container of the Text -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

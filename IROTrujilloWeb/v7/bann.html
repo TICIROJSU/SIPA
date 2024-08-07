@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- Mirrored from imedica.sharkslab.com/HTML/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2017 18:06:00 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>IRO &quot;JSU&quot; Trujillo</title>
+	
+	<link href="contenbann.css" rel="stylesheet" type="text/css" />
+	<!-- <script src="jsbann.js"></script> -->
+	
+			<!-- write your code here banner 25 años-->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="Baner_25iroj.js"></script>
+<!-- <script>
+var stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+var canvas = document.getElementById("canvas");
+function init() {	
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var s = getComputedStyle(canvas);
+	var w = s.width;
+    var h = s.height;
+    canvas.width=w.split("px")[0];
+    canvas.height=h.split("px")[0];	
+	images = images||{};	
+	ss = ss||{};
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.Baner_25iro();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;		
+		}
+	}
+	makeResponsive(false,'both',false,1);	
+	fnStartAnimation();
+}
+</script> -->
+<!-- write your code here -->
+		
+		
+<!-- <script>
+
+/*var canvasP = document.createElement("canvas");
+ 
+      var ctxP = canvasP.getContext("2d");
+         if (ctxP) {
+             // creamos el patrón.
+            ctxP.canvas.width = 20;
+            ctxP.canvas.height = 20;   
+            ctxP.rect(0, 0, 10, 10);
+            ctxP.rect(10, 10, 20, 20);
+            ctxP.fillStyle = "#d9d9d9";
+            ctxP.fillRect(0, 0, 10, 10);
+            ctxP.fillRect(10, 10, 20, 20);
+            }
+			
+      var canvas = document.getElementsByClassName("lienzo"); 
+      var ctx;
+      for( var i = 0; i < canvas.length; i++){
+      if (canvas[i] && canvas[i].getContext) {
+      ctx = canvas[i].getContext("2d");
+         if (ctx) {console.log("Habemus context")
+            ctx.restore();
+            // aplicamos el patrón
+            ctx.fillStyle = ctx.createPattern(canvasP,"repeat");
+            ctx.fillRect(0,0, canvas[i].width, canvas[i].height);
+            ctx.save();   
+         }
+      }
+   }
+  */ 
+   
+   
+   
+/*Para dibujar circulo centrado*/
+/*
+var canvas = document.getElementById("plano");
+var X,Y;
+
+inicializarCanvas();
+
+function inicializarCanvas(){  
+  var ctx = canvas.getContext("2d");
+    var s = getComputedStyle(canvas);
+    var w = s.width;
+    var h = s.height;
+    canvas.width=w.split("px")[0];
+    canvas.height=h.split("px")[0];
+  X=canvas.width/2;
+  Y=canvas.height/2;
+  dibujar(ctx);
+}
+
+function dibujar(ctx){
+  ctx.fillStyle = "#108EFF";
+  ctx.arc(X,Y,X,0,2*Math.PI);
+  ctx.fill();
+}  
+
+  */ 
+   
+   
+   
+   
+/*para centrar y dibujar*/
+/*		var canvas = document.querySelector("#canvas");
+var X,Y,W,H,r;              
+canvas.height = 250; 
+function inicializarCanvas(){ 
+  if (canvas && canvas.getContext) {
+    var ctx = canvas.getContext("2d");
+        if (ctx) {
+			 var s = getComputedStyle(canvas);
+			 var w = s.width;
+			 var h = s.height;
+					
+			 W = canvas.width = w.split("px")[0];
+			 H = canvas.height = h.split("px")[0];
+			 
+			 X = Math.floor(W/2);
+			 Y = Math.floor(H/2);
+			 r = Math.floor(W/3);
+			   
+			 dibujarEnElCanvas(ctx);
+			 }
+		}
+	}	  	   
+function dibujarEnElCanvas(ctx){
+  ctx.strokeStyle = "#006400";
+  ctx.fillStyle = "#6ab155";
+  ctx.lineWidth = 5;
+  ctx.arc(X,Y,r,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+}*/
+</script> -->
+
+		
+</head>
+<body onload="init();">
+
+
+	<!-- <div class="complete-content">
+		<div class="container full-width-container ihome-banner">
+			<div class="banner col-sm-12 col-xs-12 col-md-12">
+				<ul><!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE ->
+
+					<li data-slotamount="7" data-transition="papercut">	
+						<img alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="images/Baner_25irouno.jpg" />
+						<!--<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:2560px; height:937px">
+							<canvas id="canvas" width="1200" height="440" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+							<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2560px; height:937px; position: absolute; left: 0px; top: 0px; display: block;">
+							</div>
+						</div> ->
+					</li>
+	
+	
+			</div>
+		</div>
+	</div> -->
+	
+						<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00);">
+							<canvas id="canvas" width="2560" height="937" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+							<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; position: absolute; left: 0px; top: 0px; display: block;">
+							</div>
+						</div>
+						
+						<br />
+						
+						<!-- <div class="contenedor"><canvas id="canvas" width="100%" height="100%" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+						</div> -->
+						
+						
+					
+						
+						<!-- <canvas width="25" height="25" id="plano"></canvas>  -->
+	
+	<!-- <div class="contenedor"><canvas class="lienzo" id="lienzo1" width="170" height="170">Su navegador no soporta canvas :( </canvas></div> -->
+	<div class="contenedor"><canvas class="lienzo" id="lienzo2" width="190" height="190">Su navegador no soporta canvas :( </canvas></div>
+
+
+
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {	
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	images = images||{};	
+	ss = ss||{};
+	var s = getComputedStyle(canvas);
+	var w = s.width;
+    var h = s.height;
+    canvas.width=w.split("px")[0];
+    canvas.height=h.split("px")[0];		
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.Baner_25iro();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	/*function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;		
+		}
+	}*/
+	//makeResponsive(false,'both',false,1);	
+	fnStartAnimation();
+}
+</script>
+
+
+
+
+
+
+<!-- Ejemplo circulo centrado ->
+<script>	
+/*var canvas = document.getElementById("plano");
+var X,Y;
+inicializarCanvas();
+function inicializarCanvas(){  
+  var ctx = canvas.getContext("2d");
+    var s = getComputedStyle(canvas);
+    var w = s.width;
+    var h = s.height;
+    canvas.width=w.split("px")[0];
+    canvas.height=h.split("px")[0];
+  X=canvas.width/2;
+  Y=canvas.height/2;
+  dibujar(ctx);
+}
+function dibujar(ctx){
+  ctx.fillStyle = "#108EFF";
+  ctx.arc(X,Y,X,0,2*Math.PI);
+  ctx.fill();
+}*/
+
+/*mostrar patron y responsivo*/
+/*var canvasP = document.createElement("canvas"); 
+      var ctxP = canvasP.getContext("2d");
+         if (ctxP) {
+             // creamos el patrón.
+            ctxP.canvas.width = 20;
+            ctxP.canvas.height = 20;   
+            ctxP.rect(0, 0, 10, 10);
+            ctxP.rect(10, 10, 20, 20);
+            ctxP.fillStyle = "#d9d9d9";
+            ctxP.fillRect(0, 0, 10, 10);
+            ctxP.fillRect(10, 10, 20, 20);
+            }			
+      var canvas = document.getElementsByClassName("lienzo"); 
+      var ctx;
+      for( var i = 0; i < canvas.length; i++){
+      if (canvas[i] && canvas[i].getContext) {
+      ctx = canvas[i].getContext("2d");
+         if (ctx) {console.log("Habemus context")
+            ctx.restore();
+            // aplicamos el patrón
+            ctx.fillStyle = ctx.createPattern(canvasP,"repeat");
+            ctx.fillRect(0,0, canvas[i].width, canvas[i].height);
+            ctx.save();   
+         }
+      }
+   }*/
+   
+</script>
+-->
+	
+</body>	
+
+
